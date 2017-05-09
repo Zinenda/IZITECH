@@ -1,0 +1,29 @@
+{
+  "name": "IZItag",
+  "authors": [
+    "Ivo Zinenda <izinenda@gmail.com>"
+  ],
+  "description": "Be Seen! Get Tagged!",
+  "main": "",
+  "keywords": [
+    "Web",
+    "Design",
+    "Graphic",
+    "Design"
+  ],
+  "license": "MIT",
+  "homepage": "izitag.site",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.2",
+    "font-awesome": "^4.7.0",
+    "wow": "^1.1.2",
+    "animate.scss": "*"
+  }
+}
