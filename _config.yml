@@ -22,3 +22,9 @@ exclude:
 sass:
   sass_dir: assets/_sass
   style: compressed
+
+# Collections
+collections:
+  servicos:
+  web:
+  graphic:

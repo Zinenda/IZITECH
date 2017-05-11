@@ -1,0 +1,14 @@
+<div class="navbar-fixed">
+    <div class="nav-wrapper">
+        <a href="/" title="{{ site.title }}" class="brand-logo">{{ site.title }}</a>
+        <a href="#" data-activates="sideNav" class="button-collapse"><i class="fa fa-navicon"></i></a>
+
+        <ul class="right hide-on-med-and-down">
+            {% for item in site.data.nav %}
+                <li {% if item.link == page.url %} class="active" {% endif %}>
+                    <a href="{{ item.link }}" title="{{ item.name }}">{{ item.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

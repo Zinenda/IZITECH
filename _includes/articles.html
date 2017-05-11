@@ -1,0 +1,20 @@
+<section class="section">
+    <div class="container">
+        <h2 class="center-on-small-only">Artigos Recentes (Blogue)</h2>
+
+        <div class="row">
+            {% for post in site.posts limit: 4 %}
+                <div class="col s6 l3">
+                    <div class="card large hoverable">
+                        <div class="card-image">
+                            <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" alt="{{ post.title }}"></a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="light center-on-small-only"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
