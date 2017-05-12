@@ -1,11 +1,11 @@
 <section class="section">
     <div class="container">
-        <h2 class="center-on-small-only">Artigos Recentes (Blogue)</h2>
+        <h2 class="center-on-small-only">Artigos Recentes</h2>
 
         <div class="row">
-            {% for post in site.posts limit: 4 %}
-                <div class="col s6 l3">
-                    <div class="card large hoverable">
+            {% for post in site.posts limit: 3 %}
+                <div class="col s12 l4">
+                    <div class="card grey lighten-4 large hoverable">
                         <div class="card-image">
                             <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" alt="{{ post.title }}"></a>
                         </div>
@@ -15,6 +15,12 @@
                     </div>
                 </div>
             {% endfor %}
+        </div>
+
+        <div class="row">
+            <div class="center">
+                <a href="/blog/" title="Blogue" class="btn-large waves-effect waves-light">Visite o Blogue</a>
+            </div>
         </div>
     </div>
 </section>

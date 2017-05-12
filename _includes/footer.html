@@ -1,7 +1,7 @@
 <footer class="page-footer white-text">
     <div class="container">
         <div class="row">
-            <div class="col s6">
+            <div class="col s12 l6">
                 <h3 class="light center-on-small-only">Quem Somos</h3>
                 <p class="light center-on-small-only">
                     IZItag é uma marca fundada por um estudante de Informática entusiasmado com as possibilidades que a Web pode oferecer. Junto aos seus colegas e alguns amigos que ajudaram-no tornar sua visão uma realidade. 
@@ -10,13 +10,16 @@
                 </p>
             </div>
 
-            <div class="col s6">
-                {% include social.html %}
+            <div class="col s12 l6">
+                <h3 class="light center-on-small-only">Socialize-se</h3>
+                <div class="center-on-small-only">
+                    {% include social.html %}
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="copyright-footer">
+    <div class="footer-copyright">
         <div class="container">
             <div class="center">&copy; {{ site.time | date: "%Y" }} {{ site.title }} - {{ site.description }}</div>
         </div>
