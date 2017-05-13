@@ -1,5 +1,5 @@
 <div class="navbar-fixed">
-    <nav>
+    <nav class="nav-extended">
         <div class="nav-wrapper">
             <div class="container">
                 <a href="/" title="{{ site.title }}" class="brand-logo">{{ site.title }}</a>
@@ -14,5 +14,21 @@
                 </ul>
             </div>
         </div>
+
+        {% if page.title == "Portfólio" %}
+            <div class="nav-content">
+                <div class="container">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab">
+                            <a href="#web" title="Design Web">Design Web</a>
+                        </li>
+
+                        <li class="tab">
+                            <a href="#graphic" title="Design Gráfico">Design Gráfico</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
     </nav>
 </div>
