@@ -1,4 +1,4 @@
 ---
-title: Elementos gráficos da marca HS BAR
+title: "Identidade Visual: HS-BAR"
 image_path: "/assets/img/design/hsbar.jpg"
 ---

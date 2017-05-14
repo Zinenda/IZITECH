@@ -1,4 +1,4 @@
 ---
-title: Identidade Visual da marca HSJR
+title: "Identidade Visual: HSJR"
 image_path: "/assets/img/design/hsjr.jpg"
 ---

@@ -1,4 +1,4 @@
 ---
-title: Extra Oficial! Nova Identidade Visual da TVM
+title: "Identidade Visual: TVM"
 image_path: "/assets/img/design/tvm.jpg"
 ---

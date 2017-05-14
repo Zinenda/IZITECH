@@ -1,4 +1,4 @@
 ---
-title: Extra Oficial! Nova Identidade Visual da Shoprite
+title: "Identidade Visual: Shoprite"
 image_path: "/assets/img/design/shoprite.jpg"
 ---
