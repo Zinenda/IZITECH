@@ -3,8 +3,8 @@
         <h2 class="center-on-small-only">Trabalhos Recentes</h2>
 
         <div class="row">
-            {% for item in site.web limit: 2 %}
-                <div class="col s12 l6">
+            {% for item in site.web limit: 3 %}
+                <div class="col s12 l4">
                     <div class="card medium hoverable">
                         <div class="card-image">
                             <img src="{{ item.image_path }}" alt="{{ item.title }}">
@@ -21,8 +21,8 @@
         </div>
 
         <div class="row">
-            {% for item in site.graphic limit: 2 %}
-                <div class="col s12 l6">
+            {% for item in site.graphic limit: 3 %}
+                <div class="col s12 l4">
                     <div class="card medium hoverable">
                         <div class="card-image">
                             <img src="{{ item.image_path }}" alt="{{ item.title }}">
