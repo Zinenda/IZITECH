@@ -17,6 +17,23 @@ exclude:
   - bower_components
   - vendor
 
+defaults:
+  - scope:
+        path: ""
+        type: posts
+    values:
+        image: ""
+        categories: []
+        description: ""
+  
+  - scope:
+        path: ""
+        type: collection
+    values:
+        image_path: ""
+        title: ""
+        link: ""
+
 # Assets
 sass:
   sass_dir: assets/_sass
