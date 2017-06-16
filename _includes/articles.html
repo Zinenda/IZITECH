@@ -1,9 +1,9 @@
 <section class="section">
-    <div class="container">
-        <h2 class="center-on-small-only">Artigos Recentes</h2>
+    <div>
+        <h2 class="center-align">Artigos Recentes</h2>
         <div class="row">
-            {% for post in site.posts limit: 3 %}
-                <div class="col s12 l4">
+            {% for post in site.posts limit: 4 %}
+                <div class="col s12 l3">
                     <div class="card medium hoverable grey lighten-4">
                         <div class="card-image">
                             <a href="{{ post.url }}" title="{{ post.title }}">

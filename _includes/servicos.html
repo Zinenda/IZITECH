@@ -1,15 +1,20 @@
 <section id="servicos" class="section scrollspy">
-    <div class="container">
-        <h2 class="center-on-small-only">Serviços Oferecidos</h2>
+    <div>
+        <h2 class="center-align">Serviços Oferecidos</h2>
         <div class="row">
             {% for item in site.servicos %}
-                <div class="col s12 l4">
-                    <div class="card-panel hoverable white-text" style="background: #cc3333;">
-                        <h4 class="light center-on-small-only">{{ item.title }}</h4>
-                        <p class="light justify">{{ item.description }}</p>
+                <div class="col s12 l3">
+                    <div class="card small hoverable grey lighten-4">
+                        <h4 class="light center-align">{{ item.title }}</h4>
+                        <div class="card-content">
+                            <p class="light justify">{{ item.description }}</p>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
+            <div class="col s12 l3">
+                {% include namecheapcard.html %}
+            </div>
         </div>
 
         <div class="row">

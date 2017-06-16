@@ -1,11 +1,11 @@
 <section class="section grey lighten-4">
-    <div class="container">
-        <h2 class="center-on-small-only">Trabalhos Recentes</h2>
+    <div>
+        <h2 class="center-align">Trabalhos Recentes</h2>
 
         <div class="row">
-            {% for item in site.web limit: 3 %}
-                <div class="col s12 l4">
-                    <div class="card medium hoverable">
+            {% for item in site.web limit: 2 %}
+                <div class="col s12 l3">
+                    <div class="card small hoverable">
                         <div class="card-image">
                             <img src="{{ item.image_path }}" alt="{{ item.title }}">
                             <div class="card-title">{{ item.title }}</div>
@@ -18,12 +18,10 @@
                     </div>
                 </div>
             {% endfor %}
-        </div>
 
-        <div class="row">
-            {% for item in site.graphic limit: 3 %}
-                <div class="col s12 l4">
-                    <div class="card medium hoverable">
+            {% for item in site.graphic limit: 2 %}
+                <div class="col s12 l3">
+                    <div class="card small hoverable">
                         <div class="card-image">
                             <img src="{{ item.image_path }}" alt="{{ item.title }}">
                             <div class="card-title">{{ item.title }}</div>
