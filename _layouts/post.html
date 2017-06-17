@@ -15,14 +15,13 @@ layout: default
             <div class="col s12 l8">
                 <div class="card-panel hoverable">
                     {{ content }}
-
-                    <!-- namecheap -->
-                    {% include namecheapcard.html %}
                 </div>
             </div>
 
             <div class="hide-on-med-and-down">
-                {% include namecheap120x240.html %}
+                <div class="col l4">
+                    {% include namecheap120x240.html %}
+                </div>
             </div>
         </div>
 
