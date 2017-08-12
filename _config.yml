@@ -6,10 +6,10 @@ url: "https://izitag.site" # the base hostname & protocol for your site, e.g. ht
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-menus
+  - jekyll-email-protect
   - jekyll-sitemap
 exclude:
   - Gemfile
