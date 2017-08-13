@@ -73,6 +73,14 @@ primary-color-dark-text {
     color: $primary-color-dark;
 }
 
+.secondary-color {
+    background: $secondary-color;
+}
+
+.secondary-color-text {
+    color: $secondary-color;
+}
+
 // IMPORTED
 @import 
     "animate-bottom",
