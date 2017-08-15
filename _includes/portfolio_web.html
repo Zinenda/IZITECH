@@ -1,10 +1,11 @@
-<div id="web">
-    <div class="row">
+<div class="row">
         {% for item in site.web %}
             <div class="col s12 l4">
                 <div class="card medium hoverable">
                     <div class="card-image">
-                        <img src="{{ item.image_path }}" alt="{{ item.title }}">
+                        <img src="{{ item.image_small }}" alt="{{ item.title }}"
+                            srcset="{{ item.image_small }} 600w, {{ item.image_medium }} 800w, {{ item.image_large }} 1200w"
+                        class="materialboxed" data-caption="{{ item.title }}">
                     </div>
 
                     <div class="card-content">
@@ -19,5 +20,4 @@
                 </div>
             </div>
         {% endfor %}
-    </div>
 </div>
