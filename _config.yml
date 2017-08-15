@@ -41,7 +41,7 @@ sass:
 collections:
   servicos:
   web:
-  graphic:
+  logotipos:
 
 logo: /assets/img/logo.svg
 image: /assets/img/logo.svg

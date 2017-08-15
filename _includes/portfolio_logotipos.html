@@ -1,0 +1,9 @@
+<div id="masonry-grid">
+    <div class="row">
+        {% for item in site.logotipos %}
+            <div class="col s12 l4">
+                <img src="{{ item.image_path }}" srcset="{{ item.image_small }} 1x, {{ item.image_medium }} 2x, {{ item.image_largge }} 2x" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -14,19 +14,5 @@
                 </ul>
             </div>
         </div>
-
-        {% if page.title == "Portfólio" %}
-            <div class="container">
-                <div class="nav-content">
-                <ul class="tabs tabs-transparent">
-                    {% for item in site.data.portfolio-tabs %}
-                        <li class="tab">
-                            <a href="{{ item.link }}" title="{{ item.name }}">{{ item.name }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            </div>
-        {% endif %}
     </nav>
 </div>
