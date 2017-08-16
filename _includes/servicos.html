@@ -5,9 +5,7 @@
             {% for item in site.servicos %}
                 <div class="col s12 l4">
                     <div class="center">
-                        <h4 class="center-align">
-                            <i class="fa fa-5x {{ item.icon }}"></i>
-                        </h4>
+                        <svg class="icon-{{ item.icon }} secondary-color-text large"><use xlink:href="#icon-{{ item.icon }}"></use></svg>
                         <h3 class="center-align">{{ item.title }}</h3>
                         {{ item.description }}
                     </div>

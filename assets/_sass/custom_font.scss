@@ -1,0 +1,24 @@
+[class^="icon-"], [class*=" icon-"] {
+    height: 2rem;
+    width: 2rem;
+    display: inline-block; 
+    fill: currentColor;
+    line-height: inherit;
+    
+      &.left {
+        float: left;
+        margin-right: 15px;
+      }
+      &.right {
+        float: right;
+        margin-left: 15px;
+      }
+      &.medium {
+        height: 4rem;
+        width: 4rem;
+      }
+      &.large {
+        height: 6rem;
+        width: 6rem;
+      }
+}
