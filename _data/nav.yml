@@ -1,12 +1,15 @@
 
-- link: /portfolio/
+- link: "#portfolio"
   name: Portfólio
-
-- link: "mailto:info@izitag.site"
-  name: Contacte-nos
+  dropdown: true
 
 - link: "#sobre"
   name: Conheça-nos
 
 - link: /blog/
   name: Blogue
+
+- link: "mailto:info@izitag.site"
+  name: Contacte-nos
+  highlight: true
+
