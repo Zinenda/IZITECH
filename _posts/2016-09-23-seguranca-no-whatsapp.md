@@ -3,7 +3,7 @@ title: Segurança e Privacidade vs WhatsApp e Facebook
 date: '2016-09-23 00:00:00'
 layout: post
 author: zinenda
-image: "/assets/img/post/Segurança.jpg"
+image: "/assets/img/post/seguranca.jpg"
 keywords: Segurança, Privacidade, WhatsApp, Facebook, PIN de 6 digitos
 description: Entenda de uma vez por todas o que significa a mudança dos termos e políticas
   do WhatsApp quanto a coleta dos dados pelo Facebook e o que muda, bonus - Noticia
