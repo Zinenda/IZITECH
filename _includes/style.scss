@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Lato');
 
 html,
 body {
@@ -69,7 +68,7 @@ footer {
     background: $primary-color-dark;
 }
 
-primary-color-dark-text {
+.primary-color-dark-text {
     color: $primary-color-dark;
 }
 

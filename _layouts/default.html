@@ -11,10 +11,15 @@ layout: compress
         {% include sidenav.html %}
 
         <main class="animate-bottom">
+            {% if page.layout != "default" %}
+                {% include header.html %}
+                    {% elsif page.layout == "page" %}
+                        {% include header.html %}
+            {% endif %}
             {{ content }}
             {% include sobre.html %}
         </main>
 
         {% include footer.html %}
-        {% include fonts.html %}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         {% include scripts.html %}
