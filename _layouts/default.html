@@ -11,7 +11,7 @@ layout: compress
         {% include sidenav.html %}
 
         <main class="animate-bottom">
-            {% if page.layout != "default" %}
+            {% if page.layout == "default" %}
                 {% include header.html %}
                     {% elsif page.layout == "page" %}
                         {% include header.html %}
