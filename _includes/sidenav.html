@@ -7,7 +7,7 @@
         {% endfor %}
         <li class="divider"></li>
         {% for item in site.data.dropdown %}
-            <li><a href="{{ item.link }}" title="{{ item.name }}" class="waves-effect waves-red">{{ item.name }}</a></li>
+            <li><a href="{{ item.link }}" title="{{ item.name }}" class="waves-effect waves-red"><i class="fa fa-{{ item.icon }}"></i> {{ item.name }}</a>{{ item.name }}</a></li>
         {% endfor %}
     </ul>
 </aside>
