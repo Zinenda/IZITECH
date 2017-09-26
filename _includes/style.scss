@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i');
 
 html,
 body {
@@ -90,5 +91,5 @@ footer {
 @import 
     "animate-bottom",
     "materialize/materialize",
-    "custom_font"
+    "font-awesome"
 ;
