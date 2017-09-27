@@ -1,5 +1,7 @@
 - link: /websites/
   name: Web Sites
+  icon: desktop
 
 - link: /logotipos/
   name: Logotipos
+  icon: image
