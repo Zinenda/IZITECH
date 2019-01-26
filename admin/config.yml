@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: izitech
+    api_key: '737324531852346'
+    output_filename_only: true
+
+logo_url: /assets/img/img/brand/logo.svg
+
+collections:
+  - label: "Sobre"
+    name: "sobre"
+    folder: "collections/_sobre"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Ícone", name: "icon", widget: "string"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
+
+  - label: "Serviços"
+    name: "servicos"
+    folder: "collections/_servicos"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Ícone", name: "icon", widget: "string"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
+
+  - label: "Portfólio"
+    name: "portfolio"
+    folder: "collections/_portfolio"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - label: "Tag"
+        name: "tag"
+        widget: "select"
+        options: ["website", "identidade", "logotipo"]
+      - {label: "Imagem", name: "image", widget: "image"}
