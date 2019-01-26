@@ -1,7 +1,6 @@
 title: IZItag
-email: info@izitag.site
-description: Be Seen! Get Tagged!
-url: "https://izitag.site" # the base hostname & protocol for your site, e.g. http://example.com
+email: info@izitag.net
+description: Designing Brands
 
 
 # Build settings
@@ -11,26 +10,12 @@ plugins:
   - jekyll-feed
   - jekyll-email-protect
   - jekyll-sitemap
+  - jekyll-analytics
 exclude:
   - Gemfile
   - Gemfile.lock
   - bower_components
   - vendor
-
-defaults:
-  - scope:
-        path: ""
-        type: posts
-    values:
-        image: ""
-  
-  - scope:
-        path: ""
-        type: collection
-    values:
-        image_path: ""
-        title: ""
-        link: ""
 
 # Assets
 sass:
@@ -39,9 +24,9 @@ sass:
 
 # Collections
 collections:
+  sobre:
   servicos:
-  web:
-  logotipos:
+  portfolio:
 
-logo: /assets/img/logo.svg
-image: /assets/img/logo.svg
+logo: /assets/img/brand/logo.svg
+image: /assets/img/brand/logowhite.svg
