@@ -1,0 +1,11 @@
+<div class="section">
+    <img src="{{ site.image }}" alt="{{ site.title }}" width="200" height="200">
+    <h4 class="bolder section-title">{{ site.description }}</h4>
+    <div class="light justify">
+        {% for item in site.sobre limit: 1 %}
+            {{ item.content }}
+        {% endfor %}
+    </div>
+    <a href="#contactos" class="btn-large waves-effect waves-light" title="Contacte-nos">Contacte-nos <i class="far fa-envelope"></i></a>
+    <a href="#servicos" class="btn-large waves-effect waves-light">Saiba Mais <i class="far fa-list-alt"></i></a>
+</div>

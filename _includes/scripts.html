@@ -1,20 +1,2 @@
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js" defer></script>
-<script src="/assets/js/main.min.js" defer></script>
-
-{% if page.layout == "page" %}
-    <script src="/assets/js/masonry.pkgd.min.js" defer></script>
-    <script src="/assets/js/init.js" defer></script>
-{% endif %}
-
-{% include ga.html %}
-
-{% if page.layout == "post" %}
-    {% include sumo.html %}
-    {% elsif page.title == "Blogue" %}
-        {% include sumo.html %}
-{% endif %}
-
-{% if page.layout != "post" %}
-    {% include jivochat.html %}
-{% endif %}
+<script src="/assets/js/scrolloverflow.min.js"></script>
+<script src="/assets/js/fullpage.min.js"></script>
