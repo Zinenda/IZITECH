@@ -6,18 +6,9 @@ layout: compress
 <html dir="ltr" lang="pt">
     {% include head.html %}
 
-    <body id="top" class="grey lighten-4">
-        {% include navbar.html %}
-        {% include sidenav.html %}
-
+    <body id="top">
         <main class="animate-bottom">
-            {% if page.layout == "default" %}
-                {% include header.html %}
-                    {% elsif page.layout == "page" %}
-                        {% include header.html %}
-            {% endif %}
             {{ content }}
-            {% include sobre.html %}
         </main>
 
         {% include footer.html %}

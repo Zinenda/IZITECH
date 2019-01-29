@@ -1,19 +1,15 @@
-# Facebook
-- link: https://facebook.com/tagizi
-  name: facebook
+- title: Facebook
+  url: https://fb.com/tagizi
+  icon: facebook-f
 
-# Twitter
-- link: https://twitter.com/imaz_3g
-  name: twitter
+- title: Messenger
+  url: https://m.me/tagizi
+  icon: facebook-messenger
 
-# Instagram
-- link: https://instagram.com/izinenda
-  name: instagram
+- title: Instagram
+  url: https://instagram/izitag
+  icon: instagram
 
-# Behance
-- link: https://behance.com/izinenda5eb7
-  name: behance
-
-# Email
-- link: mailto:info@izitag.site
-  name: envelope
+- title: WhatsApp
+  url: https://wa.me/258848790215
+  icon: whatsapp

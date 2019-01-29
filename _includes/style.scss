@@ -74,8 +74,17 @@ footer {
     color: $secondary-color;
 }
 
+.bolder {
+    font-weight: bolder;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 // IMPORTED
-@import 
+@import
     "animate-bottom",
+    "page-header",
     "materialize/materialize"
 ;
