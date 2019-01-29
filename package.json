@@ -1,0 +1,12 @@
+{
+  "name": "IZItag",
+  "version": "3.0.0",
+  "description": "Designing Brands",
+  "main": "index.js",
+  "repository": "https://github.com/izitag/izitag.github.io.git",
+  "author": "Ivo Zinenda <izinenda@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fullpage.js": "^3.0.4"
+  }
+}
