@@ -9,7 +9,7 @@ author: "Ivo Zinenda"
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
-  - jekyll-feed
+  #- jekyll-feed
   - jekyll-email-protect
   - jekyll-sitemap
   - jekyll-analytics
@@ -25,6 +25,7 @@ sass:
   style: compressed
 
 # Collections
+collections_dir: collections
 collections:
   sobre:
   servicos:
