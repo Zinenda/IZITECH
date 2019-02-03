@@ -1,8 +1,19 @@
 ---
-title: Consultoria TI
+title: Consultoria
 link: /consultoria/
 icon: info-circle
-image: 'https://res.cloudinary.com/izitech/image/upload/v1549225948/consultoria.svg'
+image: 'https://res.cloudinary.com/izitech/image/upload/c_scale,w_200/consultoria.svg'
 ---
+Oferecemos consultoria em várias áreas de Tecnologias de Informação e Design.
 
-Oferecemos consultoria em várias áreas de Tecnologias de Informação, desde entidades individuais a governamentais
+Entre algumas das áreas especificas que prestamos consultoria:
+
+\- Redes LAN
+
+\- Reparação e Manutenção de PCs
+
+\- Assistência em aquisição de equipamentos informáticos
+
+\- Instalação de Sistema Operativo e respectivos utilitários
+
+\- Venda e ativação de Licenças de vários softwares (Windows, Kaspersky, Office, etc...)
