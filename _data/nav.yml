@@ -1,17 +1,19 @@
+- title: Home
+  url: "#home"
+  icon: home
 
-- link: "#portfolio"
-  name: Portfólio
-  icon: folder
-  dropdown: true
+- title: Sobre
+  url: "#sobre"
+  icon: info
 
-- link: "#sobre"
-  name: Conheça-nos
-  icon: user
+- title: Serviços
+  url: "#servicos"
+  icon: list-alt
 
-- link: /blog/
-  name: Blogue
-  icon: rss
+- title: Produtos
+  url: "#produtos"
+  icon: clipboard-list
 
-- link: "mailto:info@izitag.site"
-  name: Contacte-nos
-  icon: envelope
+- title: Portfólio
+  url: "#portfolio"
+  icon: images

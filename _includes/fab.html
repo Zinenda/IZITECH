@@ -1,3 +1,20 @@
-<div class="fixed-action-btn">
-    <a href="#top" class="btn-floating btn-large waves-effect waves-light"><svg class="icon-angle-up white-text"><use xlink:href="#icon-angle-up"></use></svg></a>
+<div class="fixed-action-btn center">
+    <button class="btn-floating btn-large waves-effect waves-circle waves-light">
+        <i class="fas fa-bars fa-lg"></i>
+    </button>
+
+    <ul>
+        {% for item in site.data.nav %}
+            <li>
+                <a 
+                    href="{{ item.url }}"
+                    class="btn-floating waves-effect waves-circle waves-light tooltipped"
+                    data-position="top"
+                    data-delay="50"
+                    data-tooltip="{{ item.title }}">
+                    <i class="fas fa-{{ item.icon }} fa-fw"></i>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 </div>
