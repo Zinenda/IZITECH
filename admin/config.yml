@@ -26,6 +26,7 @@ collections:
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
       - {label: "Ícone", name: "icon", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
