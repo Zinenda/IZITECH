@@ -1,4 +1,4 @@
-<section id="servicos" class="section scrollspy">
+<section id="servicos" class="section scrollspy grey lighten-4">
     <div class="container">
         <div class="container">
             <h4 class="section-title bolder primary-color-text center-align">
@@ -26,5 +26,23 @@
                 </div>
             </section>
         {% endfor %}
+    </div>
+</section>
+
+<section id="services" class="section">
+    <div class="container">
+        <div class="row">
+            {% for item in site.servicos offset: 3 limit: 3 %}
+                <div class="col s12 l4">
+                    <div class="card small hoverable" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="center container">
+                            <img src="{{ item.image }}" alt="{{ item.title }}" style="width: 200px;" class="materialboxed">
+                            <p class="bold primary-color-text">{{ item.title }}</p>
+                            <a href="{{ item.link }}" title="{{ page.title }}" class="btn waves-effect waves-light hoverable">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>    
+            {% endfor %}
+        </div>
     </div>
 </section>
