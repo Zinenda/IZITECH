@@ -9,7 +9,10 @@ layout: compress
     <body id="top">
         <main class="animate-bottom">
             {{ content }}
+
+            {% include contact-form/contact-modal.html %}
+            {% include fab.html %}
         </main>
-        {% include fab.html %}
+        
         {% include footer.html %}
         {% include scripts.html %}

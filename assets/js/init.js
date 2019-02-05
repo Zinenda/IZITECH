@@ -5,5 +5,6 @@ $(document).ready(function(){
         direction: 'left',
         hoverEnabled: false
     });
+    $('.modal').modal();
     $('.materialboxed').materialbox();
 });
