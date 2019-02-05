@@ -10,8 +10,24 @@
 
     .page-title {
         position: absolute;
-        top: 50%;
+        top: 20%;
         left: 10%;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .page-header {
+        .page-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            
+            h4 {
+                text-shadow: 2px -2px #fff;
+            }
+        }
     }
 }
 
@@ -23,3 +39,10 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .page-header, #services {
+      background-attachment: scroll;
+    }
+} 
