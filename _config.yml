@@ -28,6 +28,7 @@ sass:
 collections_dir: collections
 collections:
   sobre:
+  clientes:
   servicos:
   portfolio:
 
