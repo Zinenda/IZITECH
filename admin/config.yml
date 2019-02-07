@@ -31,6 +31,14 @@ collections:
       - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
 
+  - label: "Clientes"
+    name: "clientes"
+    folder: "collections/_clientes"
+    create: true
+    fields:
+      - {label: "Empresa", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
   - label: "Portfólio"
     name: "portfolio"
     folder: "collections/_portfolio"
