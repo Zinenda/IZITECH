@@ -19,7 +19,7 @@
                     <div class="card-panel hoverable">
                         <h5 class="bold primary-color-text">{{ item.title }}</h5>
                         <div class="light">
-                            {{ item.content }}
+                            {{ item.content | truncatewords: 50 }}
                         </div>
                         <a href="{{ item.link }}" title="{{ page.title }}" class="btn waves-effect waves-light hoverable">Saiba Mais</a>
                     </div>
