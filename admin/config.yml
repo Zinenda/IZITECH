@@ -35,9 +35,20 @@ collections:
     name: "clientes"
     folder: "collections/_clientes"
     create: true
+    widget: list
     fields:
       - {label: "Empresa", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
+      - label: "Imagem"
+        name: "image"
+        widget: "image"
+        media_library:
+          config:
+            default_transformations:
+              -   - fetch_format: auto
+                    width: 150  
+                    quality: auto
+                    crop: fill
+                    effect: grayscale
 
   - label: "Portfólio"
     name: "portfolio"
