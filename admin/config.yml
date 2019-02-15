@@ -36,11 +36,12 @@ collections:
     folder: "collections/_clientes"
     create: true
     fields:
+      - {label: "Clientes", name: "title", default: "Clientes", widget: "string"}
       - label: "Cliente"
         name: "client"
         widget: "list"
         fields:
-          - {label: "Empresa", name: "title", widget: "string"}
+          - {label: "Empresa", name: "company", widget: "string"}
           - label: "Logotipo"
             name: "image"
             widget: "image"
