@@ -37,10 +37,10 @@ collections:
     create: true
     fields:
       - label: "Cliente"
-        name: "title"
+        name: "client"
         widget: "list"
         fields:
-          - {label: "Empresa", name: "company", widget: "string"}
+          - {label: "Empresa", name: "title", widget: "string"}
           - label: "Logotipo"
             name: "image"
             widget: "image"
