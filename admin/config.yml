@@ -49,7 +49,7 @@ collections:
               config:
                 default_transformations:
                   -   - fetch_format: auto
-                        width: 150   
+                        width: 80   
                         quality: auto
                         crop: fill
                         effect: grayscale
