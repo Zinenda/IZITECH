@@ -1,0 +1,32 @@
+<section id="sobre" class="section scrollspy">
+    <div class="container">
+        <div class="container">
+            <h4 class="section-title bolder primary-color-text center-align">
+                <span class="text-wrapper">
+                    <span class="line line1" data-aos="fade-right"></span>
+                    <span data-aos="zoom-in" data-aos-duration="1000">Conheça-nos</span>
+                    <span class="line line2" data-aos="fade-left"></span>
+                </span>
+            </h4>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l6">
+                <img src="https://res.cloudinary.com/izitech/image/upload/c_scale,w_200,f_auto/consultoria.svg" alt="" srcset="https://res.cloudinary.com/izitech/image/upload/c_scale,w_400,f_auto/consultoria.svg 2x">
+            </div>
+
+            <div class="col s12 l6">
+                <div class="card-panel hoverable primary-color white-text" style="background: #8d032a">
+                    <div class="container">
+                        {% for item in site.sobre limit: 1 %}
+                            <h4 class="underline bolder">{{ item.title }}</h4>
+                            <div class="justify light">
+                                {{ item.content }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
