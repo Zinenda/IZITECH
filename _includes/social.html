@@ -1,21 +1,19 @@
-<div>
-    <ul class="inline-list">
-        {% for item in site.data.social %}
-            <li>
-                <a 
-                    href="{{ item.url }}"
-                    title="{{ item.title }}"
-                    target="_blank"
-                    class="btn-floating btn-flat tooltipped white-text"
-                    data-position="top"
-                    data-delay="50"
-                    data-tooltip="{{ item.title }}">
+<ul class="inline-list">
+    {% for item in site.data.social %}
+        <li>
+            <a 
+                href="{{ item.url }}"
+                title="{{ item.title }}"
+                target="_blank"
+                class="btn-floating tooltipped white-text"
+                data-position="top"
+                data-delay="50"
+                data-tooltip="{{ item.title }}">
                     
-                    <div class="center">
-                        <i class="fab fa-{{ item.icon }}"></i>
-                    </div>
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
-</div>
+                <div class="center">
+                    <i class="fab fa-{{ item.icon }}"></i>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
