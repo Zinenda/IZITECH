@@ -1,48 +1,31 @@
 <section id="servicos" class="section scrollspy grey lighten-4">
     <div class="container">
-        <div class="container">
-            <h4 class="section-title bolder primary-color-text center-align">
-                <span class="text-wrapper">
-                    <span class="line line1" data-aos="fade-right"></span>
-                    <span data-aos="zoom-in" data-aos-duration="1000">Nossos Serviços</span>
-                    <span class="line line2" data-aos="fade-left"></span>
-                </span>
-            </h4>
-        </div>
-
-        {% for item in site.servicos limit: 3 %}
-            <section class="row">
-                <div class="col s12 l6" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="1500">
-                    <img src="{{ item.image }}" alt="{{ item.title }}">
-                </div>
-                <div class="col s12 l6 justify" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="card-panel hoverable">
-                        <h5 class="bold primary-color-text">{{ item.title }}</h5>
-                        <div class="light">
-                            {{ item.content | truncatewords: 50 }}
-                        </div>
-                        <a href="{{ item.link }}" title="{{ page.title }}" class="btn waves-effect waves-light hoverable">Saiba Mais</a>
+        <h4 class="section-title bolder primary-color-text center-align">
+            <span class="text-wrapper">
+                <span class="line line1" data-aos="fade-right"></span>
+                <span data-aos="zoom-in" data-aos-duration="1000">Nossos Serviços</span>
+                <span class="line line2" data-aos="fade-left"></span>
+            </span>
+        </h4>
+    </div>
+        
+    <div class="row">
+        {% for item in site.servicos limit: 4 %}
+            <div class="col s12 l3">
+                <div class="card medium hoverable center" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="card-image">
+                        <img src="https://res.cloudinary.com/izitech/image/upload/c_scale,w_200,f_auto/{{ item.image }}" alt="{{ item.title }}" width="200">
+                    </div>
+                    <div class="card-content">
+                        <p class="bold primary-color-text">{{ item.title }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#servicos{{ forloop.index }}" title="{{ item.title }}" class="btn waves-effect waves-light hoverable modal-trigger">Saiba Mais</a>
                     </div>
                 </div>
-            </section>
+            </div>    
         {% endfor %}
     </div>
-</section>
 
-<section id="services" class="section">
-    <div class="container">
-        <div class="row">
-            {% for item in site.servicos offset: 3 limit: 3 %}
-                <div class="col s12 l4">
-                    <div class="card small hoverable" data-aos="zoom-in" data-aos-duration="1500">
-                        <div class="center container">
-                            <img src="{{ item.image }}" alt="{{ item.title }}" style="width: 200px;" class="materialboxed">
-                            <p class="bold primary-color-text">{{ item.title }}</p>
-                            <a href="{{ item.link }}" title="{{ page.title }}" class="btn waves-effect waves-light hoverable">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>    
-            {% endfor %}
-        </div>
-    </div>
+    {% include home/servicosModal.html %}
 </section>

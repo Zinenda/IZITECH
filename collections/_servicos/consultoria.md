@@ -1,8 +1,7 @@
 ---
 title: Consultoria
 link: /consultoria/
-icon: info-circle
-image: 'https://res.cloudinary.com/izitech/image/upload/c_scale,w_200/consultoria.svg'
+image: 'consultoria.svg'
 ---
 Oferecemos consultoria em várias áreas de Tecnologias de Informação e Design.
 

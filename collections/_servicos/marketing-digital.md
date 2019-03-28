@@ -1,9 +1,8 @@
 ---
 title: Marketing Digital
 link: /marketing/
-icon: rss
 image: >-
-  https://res.cloudinary.com/izitech/image/upload/v1549234833/digitalmarketing.svg
+  digitalmarketing.svg
 ---
 Somos especializados em várias áreas do Marketing Digital, entre elas como já observou nas outras secções: O Geranciamento de Redes Sociais. Todavia, o Marketing Digital vai muito mais além:
 

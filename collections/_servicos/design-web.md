@@ -1,8 +1,7 @@
 ---
 title: Design Web
 link: /designweb/
-icon: laptop
-image: 'https://res.cloudinary.com/izitech/image/upload/v1549232949/webdesign.svg'
+image: 'webdesign.svg'
 ---
 Design Web, Web Design, Páginas Web, Desenvolvimento Web, não importa qual seja o termo que esteja familiarizado, podemos garantir que a IZItag é especializada nessa área.
 

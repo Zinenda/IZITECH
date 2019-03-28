@@ -1,8 +1,7 @@
 ---
 title: Gerenciamento de Redes Sociais
 link: /redessociais/
-icon: ad
-image: 'https://res.cloudinary.com/izitech/image/upload/v1549282325/socialmedia.svg'
+image: 'socialmedia.svg'
 ---
 As redes sociais tornaram se hoje em dia, não apenas meios de comunicação colectiva, mas também um bom espaço para divulgação de marcas e negócios.
 
