@@ -1,30 +1,28 @@
 <section id="servicos" class="section scrollspy grey lighten-4">
     <div class="container">
-        <h4 class="section-title bolder primary-color-text center-align">
-            <span class="text-wrapper">
-                <span class="line line1" data-aos="fade-right"></span>
-                <span data-aos="zoom-in" data-aos-duration="1000">Nossos Serviços</span>
-                <span class="line line2" data-aos="fade-left"></span>
-            </span>
-        </h4>
-    </div>
-        
-    <div class="row">
-        {% for item in site.servicos limit: 4 %}
-            <div class="col s12 l3">
-                <div class="card medium hoverable center" data-aos="zoom-in" data-aos-duration="1500">
-                    <div class="card-image">
-                        <img src="https://res.cloudinary.com/izitech/image/upload/c_scale,w_200,f_auto/{{ item.image }}" alt="{{ item.title }}" width="200">
+        <div class="container">
+            <h4 class="section-title bolder primary-color-text center-align">
+                <span class="text-wrapper">
+                    <span class="line line1" data-aos="fade-right"></span>
+                    <span data-aos="zoom-in" data-aos-duration="1000">Nossos Serviços</span>
+                    <span class="line line2" data-aos="fade-left"></span>
+                </span>
+            </h4>
+        </div>
+
+        <div class="row">
+            {% for item in site.servicos %}
+                <div class="col s12 l4" data-aos="zoom-in" data-aos-duration="3000" style="padding: 5px">
+                    <i class="fas fa-2x fa-{{ item.icon }} primary-color-text"></i>
+                    <br>
+                    <p class="bolder grey-text text-darken-4">{{ item.title }}</p>
+                    <div class="justify light">
+                        {{ item.content | truncatewords: 18 }}
                     </div>
-                    <div class="card-content">
-                        <p class="bold primary-color-text">{{ item.title }}</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#servicos{{ forloop.index }}" title="{{ item.title }}" class="btn waves-effect waves-light hoverable modal-trigger">Saiba Mais</a>
-                    </div>
+                    <a href="#servicos{{ forloop.index }}" class="secondary-color-text modal-trigger">Saiba Mais</a>
                 </div>
-            </div>    
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
 
     {% include home/servicosModal.html %}

@@ -1,8 +1,11 @@
-{% for item in site.servicos limit: 4 %}
+{% for item in site.servicos %}
     <div id="servicos{{ forloop.index }}" class="modal">
-        <div class="container">
-            <div class="justify light primary-color-text">
-                {{ item.content }}
+        <div class="modal-content">
+            <div class="container">
+                <p class="bolder primary-color-text">{{ item.title }}</p>
+                <div class="justify light grey-text text-darken-4">
+                    {{ item.content }}
+                </div>
             </div>
         </div>
     </div>
