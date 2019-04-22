@@ -16,7 +16,7 @@
                 {% for item in site.portfolio limit: 4 %}
                     {% if item.tag == "website" %}
                         <div class="col s6">
-                            <img src="https://res.cloudinary.com/izitech/image/upload/c_scale,w_200,f_auto/{{ item.image }}" alt="{{ item.title }}" srcset="https://res.cloudinary.com/izitech/image/upload/c_scale,w_320,f_auto/{{ item.image }} 2x">
+                            <img src="{{ item.image }}" alt="{{ item.title }}">
                             <a href="{{ item.link }}" class="grey-text text-darken-4">{{ item.title }}</a>
                         </div>
                     {% endif %}
@@ -26,10 +26,9 @@
             <section class="col s12 l6">
                 <p class="bolder center-on-small-only">Logotipos</p>
                 {% for item in site.portfolio limit: 4 %}
-                    {% if item.tag == "logotipos" %}
+                    {% if item.tag == "logotipo" %}
                         <div class="col s6">
-                            <img src="https://res.cloudinary.com/izitech/image/upload/c_scale,w_200,f_auto/{{ item.image }}" alt="{{ item.title }}" srcset="https://res.cloudinary.com/izitech/image/upload/c_scale,w_320,f_auto/{{ item.image }} 2x">
-                            <p class="grey-text text-darken-4">{{ item.title }}</p>
+                            <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
                         </div>
                     {% endif %}
                 {% endfor %}
