@@ -16,7 +16,7 @@
                 {% for item in site.portfolio limit: 4 %}
                     {% if item.tag == "website" %}
                         <div class="col s6">
-                            <img src="{{ item.image }}" alt="{{ item.title }}">
+                            <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
                             <a href="{{ item.link }}" class="grey-text text-darken-4">{{ item.title }}</a>
                         </div>
                     {% endif %}

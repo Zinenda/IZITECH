@@ -67,9 +67,5 @@ collections:
         name: "tag"
         widget: "select"
         options: ["website", "identidade", "logotipo"]
-      - label: "Imagem"
-        name: "image"
-        widget: "image"
-        media_library:
-          name: cloudinary
-          output_filename_only: true
+      - {label: "Link", name: "url", widget: "string", required: "false"}
+      - {label: "Imagem", name: "image", widget: "image"}
