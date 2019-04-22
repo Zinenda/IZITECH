@@ -57,15 +57,19 @@ collections:
                         crop: scale
                         effect: grayscale
 
-  - label: "Portfólio"
-    name: "portfolio"
-    folder: "collections/_portfolio"
+  - label: "Portfólio - Websites"
+    name: "portfolio_websites"
+    folder: "collections/_portfolio_websites"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - label: "Tag"
-        name: "tag"
-        widget: "select"
-        options: ["website", "identidade", "logotipo"]
-      - {label: "Link", name: "url", widget: "string", required: false}
+      - {label: "Link", name: "url", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
+  - label: "Portfólio - Logotipos"
+    name: "portfolio_logotipos"
+    folder: "collections/_portfolio_logotipos"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}

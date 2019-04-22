@@ -13,30 +13,28 @@
         <section class="section row">
             <section class="col s12 l6">
                 <p class="bolder center-on-small-only">Web Sites</p>
-                {% for item in site.portfolio limit: 2 %}
-                    {% if item.tag == "website" %}
-                        <div class="col s6">
-                            <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
-                            <a href="{{ item.link }}" class="grey-text text-darken-4">{{ item.title }}</a>
+                {% for item in site.portfolio_websites limit: 2 %}
+                    <div class="col s6">
+                        <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
+                        <a href="{{ item.link }}" class="grey-text text-darken-4">{{ item.title }}</a>
+                        <div class="center">
+                            <a href="/portfolio_websites/" title="Portfólio de Websites" class="btn waves-effect waves-primary">Veja Mais</a>
                         </div>
-                    {% endif %}
+                    </div>
                 {% endfor %}
             </section>
 
             <section class="col s12 l6">
                 <p class="bolder center-on-small-only">Logotipos</p>
-                {% for item in site.portfolio limit: 4 %}
-                    {% if item.tag == "logotipo" %}
-                        <div class="col s6">
-                            <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
+                {% for item in site.portfolio_logotipos limit: 4 %}
+                    <div class="col s6">
+                        <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
+                        <div class="center">
+                            <a href="/portfolio_logotipos/" title="Portfólio de Logotipos" class="btn waves-effect waves-primary">Veja Mais</a>
                         </div>
-                    {% endif %}
+                    </div>
                 {% endfor %}
             </section>
         </section>
-
-        <div class="center">
-            <a href="/portfolio" title="Portfólio" class="btn waves-effect waves-primary">Veja Mais</a>
-        </div>
     </div>
 </section>
