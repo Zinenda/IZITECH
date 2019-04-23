@@ -30,7 +30,8 @@ collections:
   sobre:
   clientes:
   servicos:
-  portfolio:
+  portfolio_logotipos:
+  portfolio_websites:
 
 logo: /assets/img/brand/logo.svg
 image: /assets/img/brand/logowhite.svg

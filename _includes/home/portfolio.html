@@ -12,28 +12,32 @@
 
         <section class="section row">
             <section class="col s12 l6">
-                <p class="bolder center-on-small-only">Web Sites</p>
+                <h6 class="bolder primary-color-text">Web Sites</h6>
                 {% for item in site.portfolio_websites limit: 2 %}
                     <div class="col s6">
                         <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
-                        <a href="{{ item.link }}" class="grey-text text-darken-4">{{ item.title }}</a>
-                        <div class="center">
-                            <a href="/portfolio_websites/" title="Portfólio de Websites" class="btn waves-effect waves-primary">Veja Mais</a>
-                        </div>
+                        <a href="{{ item.url }}" class="grey-text text-darken-4" target="_blank">{{ item.title }}</a>
                     </div>
                 {% endfor %}
+                <br>
+
+                <div class="center">
+                    <a href="/portfolio_websites/" title="Portfólio de Websites" class="btn waves-effect waves-primary">Veja Mais</a>
+                </div>
             </section>
 
             <section class="col s12 l6">
-                <p class="bolder center-on-small-only">Logotipos</p>
-                {% for item in site.portfolio_logotipos limit: 4 %}
+                <h6 class="bolder primary-color-text">Logotipos</h6>
+                {% for item in site.portfolio_logotipos limit: 2 %}
                     <div class="col s6">
                         <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
-                        <div class="center">
-                            <a href="/portfolio_logotipos/" title="Portfólio de Logotipos" class="btn waves-effect waves-primary">Veja Mais</a>
-                        </div>
                     </div>
                 {% endfor %}
+                <br>
+                
+                <div class="center">
+                    <a href="/portfolio_logotipos/" title="Portfólio de Logotipos" class="btn waves-effect waves-primary">Veja Mais</a>
+                </div>
             </section>
         </section>
     </div>
