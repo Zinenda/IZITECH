@@ -2,8 +2,67 @@
 layout: default
 ---
 
-<section class="grey lighten-4">
+{% include header.html %}
+
+<style>
+    /* Box-sizing reset: //w3bits.com/?p=3225 */
+    html {
+    box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+    box-sizing: inherit;
+    }
+
+    /* The Masonry Container */
+    .masonry {
+    margin: 1.5em auto;
+    max-width: 100%;
+    column-gap: 1.5em;
+    }
+
+    /* The Masonry Brick */
+    .item {
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    }
+
+    /* Masonry on large screens */
+    @media only screen and (min-width: 1024px) {
+    .masonry {
+        column-count: 4;
+    }
+    }
+
+    /* Masonry on medium-sized screens */
+    @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonry {
+        column-count: 3;
+    }
+    }
+
+    /* Masonry on small screens */
+    @media only screen and (max-width: 767px) and (min-width: 540px) {
+    .masonry {
+        column-count: 2;
+    }
+    }
+</style>
+
+<section class="section">
     <div class="container">
-        
+        <div class="masonry">
+            {% for item in paginator.posts %}
+                <div class="item">
+                    <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
+                    <p>{% if page.title == "Logotipos" %}{{ item.title }} {% else %}{{ item.content }}{% endif %}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        {% include pagination.html %}
     </div>
 </section>

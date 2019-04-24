@@ -1,0 +1,15 @@
+<div {% if page.title == "Logotipos" %}id="logotipos" {% elsif page.title == "Websites" %}id="websites" {%else %}id="header"{% endif %} class="section page-header">
+    <div class="container">
+        <div class="page-title">
+            <a href="/">
+                <img src="{{ site.logo }}" alt="{{ site.title }}" style="width: 50%">
+            </a>
+            {% if page.layout == "page" %}
+                <h3 class="bolder primary-color-text">Portfólio | {{ page.title }}</h3>
+            {% endif %}
+            {% include cta.html %}
+            <br>
+            {% include social.html %}
+        </div>
+    </div>
+</div>

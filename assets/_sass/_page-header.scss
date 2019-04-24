@@ -1,6 +1,5 @@
 .page-header {
     position: relative;
-    background-image: url(/assets/img/mainBG.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -31,18 +30,14 @@
     }
 }
 
-#services {
-    position: relative;
-    background-image: url(/assets/img/glowBG.png);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+#header {
+    background-image: url(/assets/img/mainBG.png);
 }
 
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-    .page-header, #services {
-      background-attachment: scroll;
-    }
-} 
+#logotipos {
+    background-image: url(https://res.cloudinary.com/izitech/image/upload/q_auto/v1556087881/websites/portfoliologotipocover.webp);
+}
+
+#websites {
+    background-image: url(https://res.cloudinary.com/izitech/image/upload/q_auto/v1556087882/websites/portfoliowebcover.webp);
+}

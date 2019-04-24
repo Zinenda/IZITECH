@@ -2,6 +2,8 @@
     Contacte-nos <i class="far fa-envelope"></i>
 </a>
 
-<a href="#sobre" title="Serviços" class="btn-large waves-effect waves-light modal-trigger">
-    Saiba Mais <i class="fas fa-chevron-down"></i>
-</a>
+{% unless page.layout == "page" %}
+    <a href="#sobre" title="Sobre" class="btn-large waves-effect waves-light">
+        Saiba Mais <i class="fas fa-chevron-down"></i>
+    </a>
+{% endunless %}

@@ -8,6 +8,7 @@ author: "Ivo Zinenda"
 # Build settings
 markdown: kramdown
 plugins:
+  - jekyll-paginate-v2
   - jekyll-seo-tag
   #- jekyll-feed
   - jekyll-email-protect
@@ -35,3 +36,17 @@ collections:
 
 logo: /assets/img/brand/logo.svg
 image: /assets/img/brand/logowhite.svg
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+pagination:
+  enabled: true
+  per_page: 15
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
