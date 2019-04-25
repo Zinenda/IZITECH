@@ -63,8 +63,8 @@ collections:
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Link", name: "url", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Link", name: "body", widget: "markdown"}
 
   - label: "Portfólio - Logotipos"
     name: "portfolio_logotipos"
