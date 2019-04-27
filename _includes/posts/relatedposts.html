@@ -1,0 +1,16 @@
+<div class="col l4 hide-on-small-only">
+    <p class="bolder grey-text text-darken-4">Relacionados</p>
+    
+    <hr>
+
+    <ul>
+        {% for post in site.related_posts limit: 3 %}
+            <li>
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                    <img src="{{ post.image }}" alt="{{ post.title }}">
+                    <p class="bolder grey-text text-darken-4">{{ post.title }}</p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

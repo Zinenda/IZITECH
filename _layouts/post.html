@@ -2,37 +2,14 @@
 layout: default
 ---
 
-<header class="parallax-container hide-on-small-only">
-    <div class="parallax">
-        <img src="{{ page.image }}" alt="{{ page.title }}">
+{% include posts/header.html %}
+
+<section class="section container">
+    <div class="row">
+        <article class="col s12 l8 white grey-text text-darken-4">
+            {{ content }}
+        </article>
+
+        {% include posts/relatedposts.html %}
     </div>
-    <h1 class="center-align white-text" style="text-shadow: 2px -2px #444;">{{ page.title }}</h1>
-</header>
-
-<header class="hide-on-med-and-up">
-    <img src="{{ page.image }}" alt="{{ page.title }}">
-    <h2 class="center-align">{{ page.title }}</h2>
-</header>
-
-<article class="section blog">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <div class="card-panel hoverable">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            {% if page.previous.url %}
-                <a href="{{ page.previous.url }}" class="btn-large waves-effect waves-light">&laquo; {{ page.previous.title }}</a>
-            {% endif %}
-            {% if page.next.url %}
-                <a href="{{ page.next.url }}" class="btn-large waves-effect waves-light">{{ page.next.title }} &raquo;</a>
-            {% endif %}
-        </div>
-    </div>
-</article>
-
-{% include fab.html %}
+</section>
