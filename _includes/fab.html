@@ -1,30 +1,5 @@
-{% if page.layout == "page" %}
-    <div class="fixed-action-btn center">
-        <button class="btn-floating btn-large waves-effect waves-circle waves-light">
-            <a href="/" class="white-text">
-                <i class="fas fa-home fa-lg"></i>
-            </a>
-        </button>
-    </div>
-    {% else %}
-    <div class="fixed-action-btn center">
-            <button class="btn-floating btn-large waves-effect waves-circle waves-light">
-                <i class="fas fa-bars fa-lg"></i>
-            </button>
-        
-            <ul>
-                {% for item in site.data.nav %}
-                    <li>
-                        <a 
-                            href="{{ item.url }}"
-                            class="btn-floating waves-effect waves-circle waves-light tooltipped"
-                            data-position="top"
-                            data-delay="50"
-                            data-tooltip="{{ item.title }}">
-                            <i class="fas fa-{{ item.icon }} fa-fw"></i>
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-    </div>
-{% endif %}
+<div class="fixed-action-btn center">
+    <button data-target="sideNav" class="sidenav-trigger btn-floating btn-large waves-effect waves-light waves-circle">
+        <i class="fas fa-lg fa-bars"></i>
+    </button>
+</div>

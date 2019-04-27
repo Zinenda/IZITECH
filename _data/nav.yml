@@ -10,10 +10,10 @@
   url: "#servicos"
   icon: list-alt
 
-- title: Produtos
-  url: "#produtos"
-  icon: clipboard-list
-
 - title: Portfólio
   url: "#portfolio"
   icon: images
+
+- title: Blog
+  url: "#blog"
+  icon: newspaper

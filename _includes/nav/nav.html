@@ -1,0 +1,18 @@
+{% if page.layout == "default" %}
+    {% for item in site.data.nav %}
+    <li>
+        <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-primary">
+            <i class="fas fa-fw fa-{{ item.icon }}"></i> {{ item.title }}
+        </a>
+    </li>
+    {% endfor %}
+
+    {% else %}
+        {% for item in site.data.pages-nav %}
+            <li>
+                <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-primary">
+                    <i class="fas fa-fw fa-{{ item.icon }}"></i> {{ item.title }}
+                </a>
+            </li>
+        {% endfor %}
+{% endif %}
