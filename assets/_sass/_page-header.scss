@@ -31,35 +31,17 @@
 }
 
 #header {
-    background-image: url(https://res.cloudinary.com/izitech/image/upload/c_scale,q_auto,w_1920/v1556225434/mainBackgroud.webp);
+    background-image: url(https://res.cloudinary.com/izitech/image/upload/c_scale,q_auto,w_1920/v1556225434/mainBackgroud.png);
 }
 
 #logotipos {
-    background-image: url(https://res.cloudinary.com/izitech/image/upload/q_auto/v1556087881/websites/portfoliologotipocover.webp);
+    background-image: url(https://res.cloudinary.com/izitech/image/upload/q_auto/v1556087881/websites/portfoliologotipocover.png);
 }
 
 #websites {
-    background-image: url(https://res.cloudinary.com/izitech/image/upload/q_auto/v1556087882/websites/portfoliowebcover.webp);
+    background-image: url(https://res.cloudinary.com/izitech/image/upload/q_auto/v1556087882/websites/portfoliowebcover.png);
 }
 
 #blog {
-    background-image: url(https://res.cloudinary.com/izitech/image/upload/q_auto/v1556226703/blogcover.webp);
-}
-
-@media only screen and (max-device-width: 1366px) {
-    #header {
-        background-image: url(https://res.cloudinary.com/izitech/image/upload/c_limit,q_60,w_1366/v1556225434/mainBackgroud.png);
-    }
-
-    #logotipos {
-        background-image: url(https://res.cloudinary.com/izitech/image/upload/c_limit,q_60,w_1366/v1556087881/websites/portfoliologotipocover.png);
-    }
-    
-    #websites {
-        background-image: url(https://res.cloudinary.com/izitech/image/upload/c_limit,q_60,w_1366/v1556087882/websites/portfoliowebcover.png);
-    }
-    
-    #blog {
-        background-image: url(https://res.cloudinary.com/izitech/image/upload/c_limit,q_60,w_1366/v1556226703/blogcover.png);
-    }
+    background-image: url(https://res.cloudinary.com/izitech/image/upload/q_auto/v1556226703/blogcover.png);
 }
