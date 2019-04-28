@@ -2,15 +2,22 @@
     <div class="container">
         <div class="row">
             {% for item in site.sobre %}      
-                <div class="col s12 l4" data-aos="zoom-in" data-aos-duration="3000">
-                    <div class="card-panel hoverable primary-color white-text" style="background: #8d032a">
-                        <h4 class="bolder">{{ item.title }}</h4>
-                        <div class="justify light">
-                            {{ item.content }}
-                        </div>
+                <div class="col s12 l4 center" data-aos="zoom-in" data-aos-duration="3000">
+                    <span class="fa-stack fa-1x" style="vertical-align: middle;">
+                            <i class="fas fa-circle fa-stack-2x primary-color-text"></i>
+                            <i class="fas fa-{{ item.icon }} fa-stack-1x fa-inverse"></i>
+                    </span>
+
+                    <p class="bolder">{{ item.title }}</p>
+
+                    <div class="thin">
+                        {{ item.content | truncatewords: 20 }}
                     </div>
+                    <a href="#sobre{{ forloop.index }}" class="secondary-color-text modal-trigger">Saiba Mais</a>
                 </div>
             {% endfor %}
         </div>
     </div>
 </section>
+
+{% include home/sobreModal.html %}
