@@ -8,10 +8,10 @@ A IZItag tem o prazer de apresentar o [Private Email](http://privateemail.com/) 
 
 O pacote mais básico oferece 3GB de armazenamento para cada utilizador com suporte a:
 
-\- Webmail
+- Webmail
 
-\- Windows, macOS, Linux
+- Windows, macOS, Linux
 
-\- iOS, Android e outras plataformas móveis
+- iOS, Android e outras plataformas móveis
 
 Podendo acessar seus de qualquer cliente d email que já esteja acostumado
