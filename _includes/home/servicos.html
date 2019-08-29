@@ -10,18 +10,14 @@
             </h4>
         </div>
 
-        <div class="row">
+        <div class="slick-servicos">
             {% for item in site.servicos %}
-                <div class="col s12 l4" data-aos="zoom-in" data-aos-duration="3000">
-                    <div class="card-panel hoverable" style="height: 30vh">
-                        <div class="container">
-                            <p class="bolder primary-color-text"><i class="fas fa-{{ item.icon }}"></i> {{ item.title }}</p>
-                            <div class="justify light">
-                                {{ item.content | truncatewords: 15 }}
-                            </div>
-                            <a href="#servicos{{ forloop.index }}" class="secondary-color-text modal-trigger">Saiba Mais</a>
+                <div class="card-panel hoverable" data-aos="zoom-in" data-aos-duration="3000">
+                        <p class="bolder primary-color-text"><i class="fas fa-{{ item.icon }}"></i> {{ item.title }}</p>
+                        <div class="justify light">
+                            {{ item.content | truncatewords: 15 }}
                         </div>
-                    </div>
+                    <a href="#servicos{{ forloop.index }}" class="secondary-color-text modal-trigger">Saiba Mais</a>
                 </div>
             {% endfor %}
         </div>

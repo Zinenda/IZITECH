@@ -7,10 +7,7 @@ Design Gráfico é um dos nossos maiores focos aqui na [IZItag](/), visto que se
 
 Entre as áreas gráficas em que dedicamos-nos, destacam se:
 
-- Criação de Logotipos e Identidades Visuais
-
-- Design e Impressão de Cartões de Visita
-
-- Banners de Lona e Rollups
-
-- Panfletos/Folders
+- Criação de Logotipos e Identidades Visuais;
+- Design e Impressão de Cartões de Visita;
+- Banners de Lona e Rollups;
+- Panfletos/Folders.
