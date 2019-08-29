@@ -82,7 +82,18 @@ footer {
 
 .waves-effect.waves-primary .waves-ripple {
     background-color: rgba(141, 3, 42, 0.65);
-  }
+}
+
+nav {
+    .nav-wrapper {
+        a.brand-logo {
+            svg {
+                height: 60px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
 
 // IMPORTED
 @import

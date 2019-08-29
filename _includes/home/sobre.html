@@ -1,23 +1,16 @@
-<section id="sobre" class="section scrollspy white">
-    <div class="container">
-        <div class="row">
-            {% for item in site.sobre %}      
-                <div class="col s12 l4 center" data-aos="zoom-in" data-aos-duration="3000">
-                    <span class="fa-stack fa-1x" style="vertical-align: middle;">
-                            <i class="fas fa-circle fa-stack-2x primary-color-text"></i>
-                            <i class="fas fa-{{ item.icon }} fa-stack-1x fa-inverse"></i>
-                    </span>
+{% for item in site.sobre limit: 1 %}
+    <article class="light justify">
+        {{ item.content | truncatewords: 10 }}
+        <a href="#sobre" class="btn waves-effect waves-light modal-trigger"></a>
+    </article>
 
-                    <p class="bolder">{{ item.title }}</p>
+    <div class="modal" id="sobre">
+        <div class="container modal-content">
+            <h5 class="bolder">Sobre</h5>
 
-                    <div class="thin">
-                        {{ item.content | truncatewords: 20 }}
-                    </div>
-                    <a href="#sobre{{ forloop.index }}" class="secondary-color-text modal-trigger">Saiba Mais</a>
-                </div>
-            {% endfor %}
+            <article class="light justify">
+                {{ item.content }}
+            </article>
         </div>
     </div>
-</section>
-
-{% include home/sobreModal.html %}
+{% endfor %}
