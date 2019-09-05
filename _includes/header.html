@@ -1,14 +1,24 @@
-<header id="page-header" class="primary-color-text">
-    {% include nav/navbar.html %}
-
+<header id="page-header" class="primary-color white-text">
     <section class="section container center-on-small-only">
-        <h1 class="bolder hide-on-med-and-down">{{ site.title }}</h1>
-        <h3 class="bolder hide-on-large-only">{{ site.title }}</h3>
+        <div class="row">
+            <div class="col s12 l6">
+                <h1 class="bolder hide-on-med-and-down">{{ site.title }}</h1>
+                <h3 class="bolder hide-on-large-only">{{ site.title }}</h3>
 
-        <h4 class="bold">{{ site.description }}</h4>
+                <h4 class="bold">{{ site.description }}</h4>
 
-        {% include home/sobre.html %}
+                <p class="bolder">Design Web, Design Gráfico e Consultoria de TI</p>
 
-        {% include social.html %}
+                <a href="#sobre" class="btn waves-effect waves-light modal-trigger">Conheça-nos</a>
+                <br>
+                {% include social.html %}
+            </div>
+
+            <div class="col s12 l6">
+                <img src="/assets/img/personagem.svg" alt="">
+            </div>
+        </div>
     </section>
+
+    {% include home/sobre.html %}
 </header>

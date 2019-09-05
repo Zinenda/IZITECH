@@ -1,10 +1,8 @@
 <div class="row">
     <form name="Formulário de Contacto" method="post" netlify>
         {% include contact-form/name.html %}
-        <div class="row">
-            {% include contact-form/telephone.html %}
-            {% include contact-form/email.html %}
-        </div>
+        {% include contact-form/telephone.html %}
+        {% include contact-form/email.html %}
         {% include contact-form/subject.html %}
         {% include contact-form/message.html %}
 

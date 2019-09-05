@@ -1,14 +1,17 @@
 {% if page.layout == "default" %}
+    <li>
+        <a href="/" class="waves-effect waves-light" title="Página Inicial"><i class="fas fa-home"></i></a>
+    </li>
     {% for item in site.data.nav %}
         <li>
-            <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-primary primary-color-text">{{ item.title }}</a>
+            <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-light">{{ item.title }}</a>
         </li>
     {% endfor %}
 
     {% else %}
         {% for item in site.data.pages-nav %}
             <li>
-                <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-primary primary-color-text">
+                <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-light">
                     <i class="fas fa-fw fa-{{ item.icon }}"></i> {{ item.title }}
                 </a>
             </li>

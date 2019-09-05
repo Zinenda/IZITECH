@@ -1,17 +1,9 @@
 <section id="servicos" class="section scrollspy grey lighten-4">
     <div class="container">
-        <div class="container">
-            <h4 class="section-title bolder primary-color-text center-align">
-                <span class="text-wrapper">
-                    <span class="line line1" data-aos="fade-right"></span>
-                    <span data-aos="zoom-in" data-aos-duration="1000">Nossos Serviços</span>
-                    <span class="line line2" data-aos="fade-left"></span>
-                </span>
-            </h4>
-        </div>
+        <h4 class="section-title primary-color-text">Nossos Serviços</h4>
 
-        <div class="slick-servicos">
-            {% for item in site.servicos %}
+        <div class="section-grid">
+            {% for item in site.servicos limit: 4 %}
                 <div class="card-panel hoverable" data-aos="zoom-in" data-aos-duration="3000">
                         <p class="bolder primary-color-text"><i class="fas fa-{{ item.icon }}"></i> {{ item.title }}</p>
                         <div class="justify light">
@@ -20,6 +12,22 @@
                     <a href="#servicos{{ forloop.index }}" class="secondary-color-text modal-trigger">Saiba Mais</a>
                 </div>
             {% endfor %}
+        </div>
+
+        <a href="#maisServicos" class="modal-trigger btn waves-effect waves-light">Saiba Mais</a>
+
+        <div class="modal" id="maisServicos">
+            <div class="modal-content container section-grid">
+                {% for item in site.servicos offset: 4 %}
+                    <div class="card-panel hoverable" data-aos="zoom-in" data-aos-duration="3000">
+                            <p class="bolder primary-color-text"><i class="fas fa-{{ item.icon }}"></i> {{ item.title }}</p>
+                            <div class="justify light">
+                                {{ item.content | truncatewords: 15 }}
+                            </div>
+                        <a href="#servicos{{ forloop.index }}" class="secondary-color-text modal-trigger">Saiba Mais</a>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 

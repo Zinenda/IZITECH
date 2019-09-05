@@ -1,11 +1,3 @@
-- title: Home
-  url: "#header"
-  icon: home
-
-- title: Sobre
-  url: "#sobre"
-  icon: info
-
 - title: Serviços
   url: "#servicos"
   icon: list-alt

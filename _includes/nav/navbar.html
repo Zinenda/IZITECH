@@ -1,22 +1,26 @@
-<nav class="transparent">
-    <div class="nav-wrapper">
-        <a href="/" title="{{ site.title }}" class="brand-logo center">
-            {% include nav/logotipo.svg %}
-        </a>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" title="{{ site.title }}" class="brand-logo center">
+                {% include nav/logotipo.svg %}
+            </a>
 
-        <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="fas fa-2x fa-bars"></i></a>
+            <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="fas fa-2x fa-bars"></i></a>
 
-        <ul class="left hide-on-med-and-down">
-            {% include nav/nav.html %}
-        </ul>
-        
-        <ul class="right hide-on-med-and-down">
-            <li>
-                <a href="/en/" title="English" class="primary-color-text waves-effect waves-primary tooltipped" data-position="bottom" data-delay="50" data-tooltip="English"><i class="fas fa-globe"></i></a>
-            </li>
-            <li>
-                <a href="#Contactos" class="btn modal-trigger waves-effect waves-light">Contacte-nos</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+            <ul class="left hide-on-med-and-down">
+                {% include nav/nav.html %}
+            </ul>
+            
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="/en/" title="English" class="waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="English"><i class="fas fa-globe"></i></a>
+                </li>
+                <li>
+                    <a href="#contactos" class="btn modal-trigger waves-effect waves-light">Contacte-nos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+{% include contact-form/contact-modal.html %}
