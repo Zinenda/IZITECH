@@ -1,45 +1,64 @@
-<section id="portfolio" class="section scrollspy grey lighten-4">
+<section class="section primary-color white-text center">
     <div class="container">
-        <div class="container">
-            <h4 class="section-title bolder primary-color-text center-align">
-                <span class="text-wrapper">
-                    <span class="line line1" data-aos="fade-right"></span>
-                    <span data-aos="zoom-in" data-aos-duration="1000">Nossos Projectos</span>
-                    <span class="line line2" data-aos="fade-left"></span>
-                </span>
-            </h4>
-        </div>
+        <h4 class="section-title bolder">Nossos Projectos</h4>
 
-        <section class="section row">
-            <section class="col s12 l6">
-                <h6 class="bolder primary-color-text">Web Sites</h6>
-                {% for item in site.portfolio_websites limit: 2 %}
-                    <div class="col s6">
-                        <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
-                        <p class="grey-text text-darken-4">{{ item.content }}</p>
+        <section class="section">
+            <div class="section-grid">
+                {% for item in site.portfolio_websites limit: 4 %}
+                    <div class="card hoverable" data-aos="zoom-in" data-aos-duration="3000">
+                        <a href="{{ item.url }}">
+                            <div class="card-image">
+                                <img src="{{ item.image }}" alt="{{ item.title }}">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="bolder primary-color-text">Web Site: {{ item.title }}</p>
+                            </div>
+                        </a>
                     </div>
                 {% endfor %}
-                <br>
+            </div>
 
-                <div class="center">
-                    <a href="/portfolio_websites/" title="Portfólio de Websites" class="btn waves-effect waves-primary">Veja Mais</a>
-                </div>
-            </section>
-
-            <section class="col s12 l6">
-                <h6 class="bolder primary-color-text">Logotipos</h6>
-                {% for item in site.portfolio_logotipos limit: 2 %}
-                    <div class="col s6">
-                        <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
-                        <p class="grey-text text-darken-4">{{ item.title }}</p>
-                    </div>
-                {% endfor %}
-                <br>
-                
-                <div class="center">
-                    <a href="/portfolio_logotipos/" title="Portfólio de Logotipos" class="btn waves-effect waves-primary">Veja Mais</a>
-                </div>
-            </section>
+            <a href="/portfolio_websites/" class="btn waves-effect waves-light">Veja Mais</a>
         </section>
+        <div class="divider"></div>
+
+        <section class="section">
+            <div class="section-grid">
+                {% for item in site.portfolio_logotipos limit: 4 %}
+                    <div class="card hoverable" data-aos="zoom-in" data-aos-duration="3000">
+                        <div class="card-image">
+                            <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="Logotipo: {{ item.title }}">
+                        </div>
+
+                        <div class="card-content">
+                            <p class="bolder primary-color-text">Logotipo: {{ item.title }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <a href="/portfolio_logotipos/" class="btn waves-effect waves-light">Veja Mais</a>
+        </section>
+        <!--<div class="divider"></div>
+        
+        <section class="section">
+            <div class="section-grid">
+                {% for item in site.portfolio_diversos limit: 4 %}
+                    <div class="card hoverable" data-aos="zoom-in" data-aos-duration="3000">
+                        <div class="card-image">
+                            <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="Logotipo: {{ item.title }}">
+                        </div>
+
+                        <div class="card-content">
+                            <p class="bolder primary-color-text">Logotipo: {{ item.title }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <a href="/portfolio_diversos/" class="btn waves-effect waves-light">Veja Mais</a>
+        </section>
+        -->
     </div>
 </section>
