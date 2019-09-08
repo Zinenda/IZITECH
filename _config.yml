@@ -33,6 +33,7 @@ collections:
   servicos:
   portfolio_logotipos:
   portfolio_websites:
+  portfolio_consultoria:
 
 logo: /assets/img/brand/logo.svg
 image: /assets/img/brand/logowhite.svg

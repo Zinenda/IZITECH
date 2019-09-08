@@ -74,6 +74,14 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
 
+  - label: "Portfólio - Consultoria"
+    name: "portfolio_consultoria"
+    folder: "collections/_portfolio_consultoria"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
   - label: "Posts"
     name: "posts"
     folder: collections/_posts
