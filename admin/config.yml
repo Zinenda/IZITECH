@@ -1,12 +1,6 @@
 backend:
   name: git-gateway
 
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: izitech
-    api_key: '737324531852346'
-
 logo_url: 'https://d33wubrfki0l68.cloudfront.net/f1afd154dd1bd09e6957dce7291bfc56834b4489/b2edb/assets/img/brand/logo.svg'
 
 collections:
@@ -45,17 +39,7 @@ collections:
         widget: "list"
         fields:
           - {label: "Empresa", name: "company", widget: "string"}
-          - label: "Logotipo"
-            name: "image"
-            widget: "image"
-            media_library:
-              config:
-                default_transformations:
-                  -   - fetch_format: auto
-                        width: 80   
-                        quality: auto
-                        crop: scale
-                        effect: grayscale
+          - {label: "Logotipo", name: "image", widget: "image"}
 
   - label: "Portfólio - Websites"
     name: "portfolio_websites"
