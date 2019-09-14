@@ -1,14 +1,16 @@
 <section class="section primary-color white-text">
     <div class="section-grid container">
-        <article class="section-grid">
+        <article class="row">
             {% for item in site.portfolio_websites limit: 2 %}
-            <a href="{{ item.link }}" title="{{ item.title }}">
-            <img src="{{ item.image }}" alt="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
-            </a>
+                <div class="col s12 l6">
+                    <a href="{{ item.link }}" title="{{ item.title }}">
+                        <img src="{{ item.image }}" alt="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                    </a>
+                </div>
             {% endfor %}
         </article>
 
-        <article>
+        <article  data-aos="zoom-in-left" data-aos-duration="3000">
             <h4 class="bolder">Design Web</h4>
 
             <p>Foi assim que viemos a existir, pela paixão do desenvolvimento web e no desejo de ver todas empresas locais com websites dignos a comparação internacional. <br> Estamos preparados para desenvolver vários tipos de projectos web, desde um simples blog a um portal web ou um sistema de Gestão. Visite nosso portfólio e aprecie os nossos projectos baseados na web. Brevemente apresentaremos mais.</p>

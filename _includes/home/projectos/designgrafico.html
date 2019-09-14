@@ -1,14 +1,16 @@
 <section class="section">
     <div class="section-grid container">
-        <article>
+        <article data-aos="zoom-in-right" data-aos-duration="3000">
             <h4 class="bolder">Design Gráfico</h4>
 
             <p>Somos especializados no <b>Design de Identidades Visuais</b>, elaboramos o projecto, desde o briefing até ao manual da marca. Seguimos tendências internacionais para manter nos a pár dos novos metódos e novas técnicas, mesmo assim sem apegarmos tanto criando assim uma marca atemporal. <br> Aprecie alguns logotipos que criamos nesses últimos 3 anos</p>
         </article>
 
-        <article class="section-grid">
+        <article class="row">
             {% for item in site.portfolio_logotipos limit: 2 %}
-                <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="col s12 l6">
+                    <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                </div>
             {% endfor %}
         </article>
     </div>

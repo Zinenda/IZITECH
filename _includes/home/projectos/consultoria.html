@@ -1,14 +1,16 @@
 <section class="section secondary-color-text">
     <div class="section-grid container">
-        <article>
+        <article data-aos="zoom-in-right" data-aos-duration="3000">
             <h4 class="bolder">Consultoria</h4>
 
             <p>Prestamos consultoria em <b>Tecnologias de Informação</b> e várias outras áreas técnicas e gráficas. Aprecie nosso portfólio e veja quais dos serviços já prestados gostaria que a nossa experiência beneficisse a si e sua empresa</p>
         </article>
 
-        <article class="section-grid">
+        <article class="row">
             {% for item in site.portfolio_consultoria limit: 2 %}
-                <img src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="col s12 l6">
+                    <img src="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                </div>
             {% endfor %}
         </article>
     </div>
