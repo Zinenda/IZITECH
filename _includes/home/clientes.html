@@ -2,7 +2,7 @@
     <div class="row slick-clientes">
         {% for item in site.clientes.first.client %}
             <div>
-                <img src="{{ item.image }}" alt="{{ item.company }}" style="width: 80px">
+                <img src="{{ item.image }}?nf_resize=fit&w=80" alt="{{ item.company }}">
             </div>
         {% endfor %}
     </div>
