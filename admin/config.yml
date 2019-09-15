@@ -1,5 +1,8 @@
 backend:
   name: git-gateway
+  use_large_media_transforms_in_media_library: false
+
+media_folder: 'assets/uploads'
 
 logo_url: 'https://d33wubrfki0l68.cloudfront.net/f1afd154dd1bd09e6957dce7291bfc56834b4489/b2edb/assets/img/brand/logo.svg'
 
@@ -19,13 +22,6 @@ collections:
     create: false
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Link", name: "link", widget: "string"}
-      - label: "Imagem"
-        name: "image"
-        widget: "image"
-        media_library:
-          name: cloudinary
-          output_filename_only: true
       - {label: "Conteúdo", name: "body", widget: "markdown"}
 
   - label: "Clientes"
@@ -48,7 +44,7 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Link", name: "body", widget: "markdown"}
+      - {label: "Link", name: "link", widget: "string"}
 
   - label: "Portfólio - Logotipos"
     name: "portfolio_logotipos"

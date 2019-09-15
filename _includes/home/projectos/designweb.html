@@ -4,7 +4,7 @@
             {% for item in site.portfolio_websites limit: 2 %}
                 <div class="col s12 l6">
                     <a href="{{ item.link }}" title="{{ item.title }}">
-                        <img src="{{ item.image }}" alt="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                        <img data-src="{{ item.image }}" alt="{{ item.title }}" class="lazy" data-aos="zoom-in" data-aos-duration="3000">
                     </a>
                 </div>
             {% endfor %}
