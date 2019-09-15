@@ -9,7 +9,7 @@
         <article class="row">
             {% for item in site.portfolio_consultoria limit: 2 %}
                 <div class="col s12 l6">
-                    <img data-src ="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                    <img data-src ="{{ item.image }}?nf_resize=fit&w=300" alt="{{ item.title }}" class="materialboxed lazy" data-caption="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
                 </div>
             {% endfor %}
         </article>
