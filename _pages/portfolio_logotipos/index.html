@@ -1,0 +1,16 @@
+---
+title: Logotipos
+layout: default
+---
+
+<section class="section">
+    <div class="container">
+        <div class="section-grid">
+            {% for item in site.portfolio_logotipos %}
+                <a href="{{ item.image }}?nf_resize=fit&w=670" data-lightbox="{{ page.title }}" data-caption="{{ item.title }}">
+                    <img data-src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}" class="lazy">
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
