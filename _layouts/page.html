@@ -2,30 +2,30 @@
 layout: default
 ---
 
-{% include pages/masonry.html %}
-
-<section class="section">
-    <div class="container">
-        <div class="masonry">
-            {% for item in paginator.posts %}
-                <div class="item">
-                    {% if page.title == "Blog" %}
-                        <a href="{{ item.url }}">
-                            <img src="{{ item.image }}" alt="{{ item.title }}">
-                            <h4 class="bolder primary-colo-text">{{ item.title }}</h4>
-                            <div class="grey-text text-darken-4 light">
-                                {{ item.content | truncatewords: 20 }}
-                            </div>
-                        </a>
-
-                        {% else %}
-                            <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed" data-caption="{{ item.title }}">
-                            <p>{% if page.title == "Logotipos" %}{{ item.title }} {% else %}{{ item.content }}{% endif %}</p>
-                    {% endif %}
-                </div>
-            {% endfor %}
+{% if page.title == "Logotipos" %}
+    <section class="section">
+        <div class="container">
+            <div class="section-grid">
+                {% for item in site.portfolio_logotipos %}
+                    <a href="{{ item.image }}?nf_resize=fit&w=670" data-lightbox="{{ page.title }}" data-caption="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                        <img data-src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}" class="lazy">
+                    </a>
+                {% endfor %}
+            </div>
         </div>
+    </section>
+{% endif %}
 
-        {% include pages/pagination.html %}
-    </div>
-</section>
+{% if page.title == "Websites" %}
+    <section class="section">
+        <div class="container">
+            <div class="section-grid">
+                {% for item in site.portfolio_websites %}
+                    <a href="{{ item.link }}" title="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                        <img data-src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}" class="lazy">
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}
