@@ -34,6 +34,7 @@ collections:
   portfolio_logotipos:
   portfolio_websites:
   portfolio_consultoria:
+    output: true
 
 logo: /assets/img/brand/logo.svg
 image: /assets/img/brand/logowhite.svg

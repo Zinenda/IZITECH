@@ -24,19 +24,6 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
 
-  - label: "Clientes"
-    name: "clientes"
-    folder: "collections/_clientes"
-    create: true
-    fields:
-      - {label: "Clientes", name: "title", default: "Clientes", widget: "string"}
-      - label: "Cliente"
-        name: "client"
-        widget: "list"
-        fields:
-          - {label: "Empresa", name: "company", widget: "string"}
-          - {label: "Logotipo", name: "image", widget: "image"}
-
   - label: "Portfólio - Websites"
     name: "portfolio_websites"
     folder: "collections/_portfolio_websites"
@@ -58,9 +45,32 @@ collections:
     name: "portfolio_consultoria"
     folder: "collections/_portfolio_consultoria"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Tag", name: "tag", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
+      - label: "Galeria"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Corpo", name: "body", widget: "markdown"}
+
+  - label: "Clientes"
+    name: "clientes"
+    folder: "collections/_clientes"
+    create: true
+    fields:
+      - {label: "Clientes", name: "title", default: "Clientes", widget: "string"}
+      - label: "Cliente"
+        name: "client"
+        widget: "list"
+        fields:
+          - {label: "Empresa", name: "company", widget: "string"}
+          - {label: "Logotipo", name: "image", widget: "image"}
 
   - label: "Posts"
     name: "posts"
