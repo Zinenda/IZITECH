@@ -9,11 +9,12 @@
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-{% include lightbox.html %}
 
-{% unless page.layout == "page" %}
-	{% include aos.html %}
-	{% include home/slick-carousel.html %}
-{% endunless %}
+{% include aos.html %}
+{% include home/slick-carousel.html %}
+
+{% if page.layout == "page" %}
+	{% include lightbox.html %}	
+{% endif %}
 
 <script defer src="/assets/js/init.js"></script>

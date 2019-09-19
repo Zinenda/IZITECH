@@ -1,0 +1,11 @@
+<div class="modal" id="{{ page.title }}{{ item.title }}">
+    <div class="container modal-content">
+        <div class="section-grid">
+            {% for picture in item.gallery %}
+                <a href="{{ picture.image }}?nf_resize=fit&w=1280" data-lightbox="{{ item.title }}">
+                    <img data-src="{{ picture.image }}?nf_resize=fit&w=320" alt="{{ item.title }}" class="lazy" data-aos="zoom-in" data-aos-duration="3000">
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

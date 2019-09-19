@@ -1,0 +1,13 @@
+{% if page.title == "Websites" %}
+    <section class="section">
+        <div class="container">
+            <div class="section-grid">
+                {% for item in site.portfolio_websites %}
+                    <a href="{{ item.link }}" title="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                        <img data-src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}" class="lazy">
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}

@@ -1,0 +1,31 @@
+{% if page.title == "Consultoria" %}
+    <section class="section">
+        <div class="container">
+            {% for item in site.portfolio_consultoria %}
+                <section class="section-grid">
+                    <article data-aos="zoom-in-right" data-aos-duration="3000">
+                        <p class="bolder">{{ item.title }}</p>
+                        
+                        <p class="thin grey-text">Trabalho realizado aos {{ item.date | date: "%d/%m/%Y" }}</p>
+                        
+                        <hr>
+
+                        <p class="light">{{ item.content | truncatewords: 50 }}</p>
+                        <a href="#{{ item.title }}" class="modal-trigger btn waves-effect waves-light">Saiba Mais</a>
+                        <a href="#{{ page.title }}{{ item.title }}" class="modal-trigger btn waves-effect waves-light" title="Galeria">Veja Mais</a>
+                    </article>
+
+                    <article>
+                        <img data-src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}" class="lazy" data-aos="zoom-in" data-aos-duration="3000">
+                    </article>
+                </section>
+
+                {% unless forloop.last %} <div class="divider"></div> {% endunless %}
+
+                {% include pages/consultoria/content.html %}
+
+                {% include pages/consultoria/images.html %}
+            {% endfor %}
+        </div>
+    </section>
+{% endif %}
