@@ -1,14 +1,14 @@
 .page-header {
     height: 100vh;
-    background-image: url(https://res.cloudinary.com/izitech/image/upload/c_scale,q_auto,w_1920/v1556225434/mainBackgroud.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
-    .page-title {
+    .header-content {
         position: absolute;
-        top: 20%;
-        left: 10%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
