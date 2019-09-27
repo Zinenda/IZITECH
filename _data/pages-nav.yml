@@ -1,15 +1,8 @@
-- title: Página Inicial
-  url: /
-  icon: home
-
 - title: Portfólio | Logotipos
-  url: /portfolio_logotipos/
-  icon: images
+  url: /portfolio/logotipos
 
 - title: Portfólio | Websites
-  url: /portfolio_websites/
-  icon: desktop
+  url: /portfolio/websites
 
 - title: Blog
   url: /blog/
-  icon: newspaper

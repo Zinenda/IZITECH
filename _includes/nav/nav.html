@@ -1,7 +1,7 @@
+<li>
+    <a href="/" class="waves-effect waves-light" title="Página Inicial"><i class="fas fa-home"></i> <div class="hide-on-large-only">Página Inicial</div></a>
+</li>
 {% if page.layout == "default" %}
-    <li>
-        <a href="/" class="waves-effect waves-light" title="Página Inicial"><i class="fas fa-home"></i> <div class="hide-on-large-only">Página Inicial</div></a>
-    </li>
     {% for item in site.data.nav %}
         <li>
             <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-light">{{ item.title }}</a>
@@ -12,7 +12,7 @@
         {% for item in site.data.pages-nav %}
             <li>
                 <a href="{{ item.url }}" title="{{ item.title }}" class="waves-effect waves-light">
-                    <i class="fas fa-fw fa-{{ item.icon }}"></i> {{ item.title }}
+                    {{ item.title }}
                 </a>
             </li>
         {% endfor %}

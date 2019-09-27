@@ -41,6 +41,7 @@ $(document).ready(function(){
 
 	$('.slick-clientes').slick({
 		dots: false,
+		lazyLoad: 'ondemand',
 		infinite: true,
 		autoplay: true,
 		autoplaySpeed: 2000,
