@@ -13,7 +13,7 @@ plugins:
   - jekyll-email-protect
   - jekyll-sitemap
   - jekyll-analytics
-  - jekyll-paginate-v2
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -43,12 +43,4 @@ image: /assets/img/brand/logowhite.svg
 markdown: kramdown
 permalink: pretty
 
-pagination:
-  enabled: true
-  per_page: 20
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  trail: 
-    before: 2
-    after: 2
+paginate: 10
