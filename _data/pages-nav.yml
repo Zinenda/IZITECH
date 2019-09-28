@@ -1,8 +1,11 @@
-- title: Portfólio | Logotipos
+- title: Logotipos
   url: /portfolio/logotipos
 
-- title: Portfólio | Websites
+- title: Websites
   url: /portfolio/websites
+
+- title: Consultoria
+  url: /portfolio/consultoria
 
 - title: Blog
   url: /blog/
