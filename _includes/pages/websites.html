@@ -3,9 +3,17 @@
         <div class="container">
             <div class="section-grid">
                 {% for item in site.portfolio_websites %}
-                    <a href="{{ item.link }}" title="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
-                        <img data-src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}" class="lazy">
-                    </a>
+                    <div class="card">
+                        <div class="card-image">
+                        <img data-src="{{ item.image }}?nf_resize=fit&w=320" alt="{{ item.title }}" class="lazy materialboxed" data-caption="{{ item.title }}">
+                        </div>
+                        
+                        <div class="card-action center">
+                            <a href="{{ item.link }}" title="{{ item.title }}" data-aos="zoom-in" data-aos-duration="3000">
+                                <p class="bolder">{{ item.title }}</p>
+                            </a>
+                        </div>
+                    </div>
                 {% endfor %}
             </div>
         </div>

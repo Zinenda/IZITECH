@@ -2,10 +2,17 @@
     <section class="section container center-on-small-only header-content">
         <div class="row">
             <div class="col s12 l6">
-                <h1 class="bolder hide-on-med-and-down">{{ site.title }}</h1>
-                <h3 class="bolder hide-on-large-only">{{ site.title }}</h3>
+                {% if page.layout == "default" %}
+                    <h1 class="bolder">{{ site.title }}</h1>
+                {% endif %}
+                
+                {% if page.layout == "page" %}
+                    <h3 class="bolder">Portfólio | {{ page.title }}</h3>
+                {% endif %}
 
-                <h4 class="bold">{{ site.description }}</h4>
+                {% if page.layout == "default" %}
+                    <h4 class="bold">{{ site.description }}</h4>
+                {% endif %}
 
                 <p class="bolder">Design Web, Design Gráfico e Consultoria de TI</p>
 
