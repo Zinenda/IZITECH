@@ -4,12 +4,16 @@ layout: default
 
 {% include posts/header.html %}
 
-<section class="section container">
-    <div class="row">
-        <article class="col s12 l8 white grey-text text-darken-4">
-            {{ content }}
-        </article>
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <article class="col s12 l8 grey-text text-darken-4">
+                <div class="card-panel">
+                    {{ content }}
+                </div>
+            </article>
 
-        {% include posts/relatedposts.html %}
+            {% include posts/relatedposts.html %}
+        </div>
     </div>
 </section>
