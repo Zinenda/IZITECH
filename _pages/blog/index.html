@@ -6,7 +6,7 @@ layout: default
 <section class="section">
     <div class="container">
         {% for post in paginator.posts %}
-            <article class="card-panel hoverable row">
+            <article class="card-panel hoverable row" data-aos="zoom-in-up" data-aos-duration="3000">
                 <div class="col s12 l4">
                     <img data-src="{{ post.image }}?nf_resize=fit&w=250" alt="{{ post.title }}" class="lazy">
                 </div>

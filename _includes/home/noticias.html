@@ -1,0 +1,27 @@
+<section class="section scrollspy grey lighten-4" id="blog">
+    <div class="container">
+        <h4 class="center-align primary-color-text underline section-title">Notícias</h4>
+
+        <div class="section section-grid">
+            {% for post in site.posts limit: 3 %}
+                <article class="card hoaverable" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="card-image">
+                        <img data-src="{{ post.image }}?nf_resize=fit&w=250" alt="{{ post.title }}" class="lazy">
+                    </div>
+
+                    <div class="card-content">
+                        <p class="bolder grey-text text-darken-4">{{ post.title }}</p>
+
+                        <div class="text-justified light">
+                            {{ post.content | truncatewords: 20 }}
+                        </div>
+                    </div>
+
+                    <div class="card-action">
+                        <a href="{{ post.url }}" title="{{ post.title }}">Leia Mais</a>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
