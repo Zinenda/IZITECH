@@ -36,7 +36,7 @@ collections:
   portfolio_consultoria:
     output: true
 
-logo: /assets/img/brand/logo.svg
+logo: /assets/img/brand/IZIlogo.svg
 image: /assets/img/brand/logowhite.svg
 
 # Build settings
