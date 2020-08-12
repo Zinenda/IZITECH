@@ -4,7 +4,7 @@ backend:
 
 media_folder: 'assets/uploads'
 
-logo_url: 'https://d33wubrfki0l68.cloudfront.net/f1afd154dd1bd09e6957dce7291bfc56834b4489/b2edb/assets/img/brand/logo.svg'
+logo_url: 'assets/img/brand/logo.svg'
 
 collections:
   - label: "Sobre"
@@ -24,40 +24,16 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
 
-  - label: "Portfólio - Websites"
-    name: "portfolio_websites"
-    folder: "collections/_portfolio_websites"
-    create: true
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Link", name: "link", widget: "string"}
-
-  - label: "Portfólio - Logotipos"
-    name: "portfolio_logotipos"
-    folder: "collections/_portfolio_logotipos"
-    create: true
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
-
-  - label: "Portfólio - Consultoria"
-    name: "portfolio_consultoria"
-    folder: "collections/_portfolio_consultoria"
+  - label: "Portfóli"
+    name: "portfolio"
+    folder: "collections/_portfolio"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Data", name: "date", widget: "datetime"}
-      - {label: "Tag", name: "tag", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
-      - label: "Galeria"
-        name: "gallery"
-        widget: "list"
-        fields:
-          - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
-      - {label: "Corpo", name: "body", widget: "markdown"}
+      - {label: "Categoria", name: "category", widget: "select", options: "[grafico, web, consultoria]"}
+      - {label: "Link", name: "link", widget: "string", required: false}
 
   - label: "Clientes"
     name: "clientes"

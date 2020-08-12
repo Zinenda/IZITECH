@@ -2,8 +2,13 @@
     <div id="servicos{{ forloop.index }}" class="modal">
         <div class="modal-content">
             <div class="container">
-                <p class="bolder primary-color-text">{{ item.title }}</p>
-                <div class="justify light grey-text text-darken-4">
+                <h5 class="primary-color-text center text-title">
+                    <i class="fas fa-{{ item.icon }}"></i>
+                    <br>
+                    {{ item.title }}
+                </h5>
+                
+                <div class="light">
                     {{ item.content }}
                 </div>
             </div>

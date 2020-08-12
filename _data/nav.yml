@@ -1,11 +1,8 @@
 - title: Serviços
   url: "#servicos"
-  icon: list-alt
 
 - title: Portfólio
   url: "#portfolio"
-  icon: images
 
-- title: Notícias
-  url: "#blog"
-  icon: newspaper
+- title: Blogue
+  url: /blog/

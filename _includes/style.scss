@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
-@import "variables";
+// IMPORTED
+@import
+    "variables",
+    "animate-bottom",
+    "page-header",
+    "mygrid",
+    "materialize/materialize"
+;
 
 html,
 body {
@@ -10,6 +17,7 @@ body {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     color: #444;
+    font-size: 100%;
 }
 
 body {
@@ -17,6 +25,15 @@ body {
 }
 main {
     flex: 1 0 auto;
+}
+
+nav {
+    a.brand-logo {
+        svg {
+            height: 5rem;
+            padding: 1rem 0;
+        }
+    }
 }
 
 img {
@@ -76,23 +93,28 @@ footer {
     font-weight: bold;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+i, em {
+    font-style: italic;
+}
+
+.text-title {
+    padding: 2rem 0;
+}
+
 .prefix {
     color: $primary-color;
 }
 
 .waves-effect.waves-primary .waves-ripple {
     background-color: rgba(141, 3, 42, 0.65);
-}
-
-nav {
-    .nav-wrapper {
-        a.brand-logo {
-            svg {
-                height: 60px;
-                padding-top: 10px;
-            }
-        }
-    }
 }
 
 #clientes {
@@ -102,11 +124,3 @@ nav {
         width: 80px;
     }
 }
-// IMPORTED
-@import
-    "animate-bottom",
-    "page-header",
-    "mygrid",
-    "moving-letters",
-    "materialize/materialize"
-;

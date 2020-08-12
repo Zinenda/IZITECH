@@ -1,24 +1,56 @@
-<header class="page-header primary-color-text white">
-    <section class="section container center-on-small-only header-content">
-        <div class="row">
-            <div class="col s12 l6">
-                <h1 class="bolder hide-on-med-and-down">{% if page.layout == "default" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</h1>
-                <h4 class="bolder hide-on-large-only">{% if page.layout == "default" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</h4>
+<!--
+    <header class="page-header primary-color-text white">
+        <section class="section container center-on-small-only header-content">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h1 class="bolder hide-on-med-and-down">{% if page.layout == "default" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</h1>
+                    <h4 class="bolder hide-on-large-only">{% if page.layout == "default" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</h4>
+                    
+                    <article>
+                        <p class="flow-text">Somos especialistas no desenvolvimento de soluções em Técnologias de Informação, Páginas Web e Design Gráfico</p>
+                    </article>
+                    
+                    {% include cta.html %}
+                    <br>
+                    {% include social.html %}
+                </div>
+
                 
-                <article>
-                    <p class="flow-text">Somos especialistas no desenvolvimento de soluções em Técnologias de Informação, Páginas Web e Design Gráfico</p>
-                </article>
-                
-                {% include cta.html %}
-                <br>
-                {% include social.html %}
+            </div>
+        </section>
+
+        {% include home/sobre.html %}
+    </header>
+-->
+
+<header>
+    <div class="container">
+        <div class="section section-grid">
+            <div class="col s12 l4">
+                <h1 class="text-title primary-color-text">
+                    {% if page.title %}
+                        {{ page.title }}
+                        
+                        {% else %}
+                            {{ site.title %}}
+                    {% endif %}
+                </h1>
+
+                {% if page.layout == "default" %}
+                    {% for item in site.sobre limit: 1 %}
+                        <p class="primary-color-text">{{ item.content }}</p>
+                    {% endfor %}
+                {% endif %}
+
+                <div class="text-title">
+                    <a href="#contactos" class="btn-large waves-effect waves-light modal-trigger">Contacte-nos</a>
+                    <a href="#servicos" class="btn-large white secondary-color-text waves-effect waves-primary">Conheça-nos</a>
+                </div>
             </div>
 
             <div class="col s12 l6">
-                <img src="/assets/img/izibot.svg" alt="">
+                <img src="/assets/img/izibot.svg" class="right">
             </div>
         </div>
-    </section>
-
-    {% include home/sobre.html %}
+    </div>
 </header>

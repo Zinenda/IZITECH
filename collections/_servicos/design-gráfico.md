@@ -3,7 +3,7 @@ title: Design Gráfico
 link: /designgrafico/
 icon: pencil-ruler
 ---
-Design Gráfico é um dos nossos maiores focos aqui na [IZItag](/), visto que sempre fomos apaixonados pela criação de vários conteúdos criativos que contribuem na melhoria da imagem dos nossos clientes.
+Design Gráfico é um dos nossos maiores focos aqui na [IZITech](/), visto que sempre fomos apaixonados pela criação de vários conteúdos criativos que contribuem na melhoria da imagem dos nossos clientes.
 
 Entre as áreas gráficas em que dedicamos-nos, destacam se:
 
