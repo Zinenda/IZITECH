@@ -1,10 +1,42 @@
 <style>
     #portfolio {
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/img/parallaxIZITech.png);
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/img/parallaxIZITechMobile.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+    }
+
+    .page-header {
+        background-image: linear-gradient(rgba(8,52,117,0.5), rgba(8,52,117,0.5)), url(/assets/img/pparallaxIZITechMobile.png?nf_resize=fit&h=640);
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .page-header {
+            background-image: linear-gradient(rgba(8,52,117,0.5), rgba(8,52,117,0.5)), url(/assets/img/parallaxIZITechMobile.png?nf_resize=fit&h=768);
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .page-header {
+            background-image: linear-gradient(rgba(8,52,117,0.5), rgba(8,52,117,0.5)), url(/assets/img/parallaxIZITech.png?nf_resize=fit&w=1024);
+        }
+    } 
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .page-header {
+            background-image: linear-gradient(rgba(8,52,117,0.5), rgba(8,52,117,0.5)), url(/assets/img/parallaxIZITech.png?nf_resize=fit&h=992);
+        }
+    } 
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .page-header {
+            background-image: linear-gradient(rgba(8,52,117,0.5), rgba(8,52,117,0.5)), url(/assets/img/parallaxIZITech.png?nf_resize=fit&w=1920);
+        }
     }
 </style>
 
