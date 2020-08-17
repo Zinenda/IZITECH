@@ -15,7 +15,7 @@ gem "jekyll", "~> 4.1.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-feed'
-  gem 'jekyll-paginate-v2', github: 'sverrirs/jekyll-paginate-v2'
+  gem 'jekyll-paginate-v2'
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
 end
