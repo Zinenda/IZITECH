@@ -13,22 +13,22 @@ $link-color: $primary-color-light !default;
 $card-padding: 20px !default;
 $card-bg-color: var(--bg) !default;
 $card-link-color: #FF931E !default;
-$card-link-color-light: $primary-color-dark !default;
+$card-link-color-light: $primary-color-light !default;
 
 
 /* 13. Navigation Bar
    ========================================================================== */
 
 $navbar-height: 80px !default;
-$navbar-height-mobile: 54px !default;
-$navbar-font-color: #fff !default;
+$navbar-height-mobile: 80px !default;
+$navbar-font-color: var(--text) !default;
 $navbar-brand-font-size: 2.1rem !default;
 
 
 /* 14. Side Navigation
    ========================================================================== */
 
-$sidenav-font-color: $primary-color !default;
+$sidenav-font-color: var(--text) !default;
 $sidenav-bg-color: var(--bg) !default;
 $sidenav-padding-right: 30px !default;
 $sidenav-item-height: 64px !default;

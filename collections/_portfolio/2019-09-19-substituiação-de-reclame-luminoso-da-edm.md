@@ -12,6 +12,7 @@ gallery:
   - image: /assets/uploads/reclamemaioredmnightlight.jpg
   - image: /assets/uploads/dsc5959.jpg
 layout: post
+category: grafico
 ---
 Subistituição de 2 Reclames Luminosos na Delegação da **Electricidade de Moçambique** na Cidade de Tete foi um trabalho realizado a tempo record, visto que em apenas 1 final de semana foi possível o design, impressão de banners, substituição das luzes internas e remontagem dos mesmos.
 
