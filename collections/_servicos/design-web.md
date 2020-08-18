@@ -3,7 +3,7 @@ title: Design Web
 link: /designweb/
 icon: laptop
 ---
-Design Web, Web Design, Páginas Web, Desenvolvimento Web, não importa qual seja o termo que esteja familiarizado, podemos garantir que a IZItag é especializada nessa área.
+Design Web, Web Design, Páginas Web, Desenvolvimento Web, não importa qual seja o termo que esteja familiarizado, podemos garantir que a {{ site.title }} é especializada nessa área.
 
 - Planejamento;
 - Prototipagem e Design;
