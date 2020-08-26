@@ -32,8 +32,8 @@ collections:
   servicos:
   portfolio:
 
-logo: /assets/img/IZIlogo.svg
-image: /assets/img/logowhite.svg
+logo: /assets/img/IZI2ndLogo.svg
+image: /assets/img/IZILogotipo.svg
 
 # Build settings
 markdown: kramdown
