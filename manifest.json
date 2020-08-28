@@ -1,41 +1,80 @@
 {
- "name": "IZItag",
- "icons": [
-  {
-   "src": "\/assets/img/brand/favicon/android-icon-36x36.png",
-   "sizes": "36x36",
-   "type": "image\/png",
-   "density": "0.75"
-  },
-  {
-   "src": "\/assets/img/brand/favicon/android-icon-48x48.png",
-   "sizes": "48x48",
-   "type": "image\/png",
-   "density": "1.0"
-  },
-  {
-   "src": "\/assets/img/brand/favicon/android-icon-72x72.png",
-   "sizes": "72x72",
-   "type": "image\/png",
-   "density": "1.5"
-  },
-  {
-   "src": "\/assets/img/brand/favicon/android-icon-96x96.png",
-   "sizes": "96x96",
-   "type": "image\/png",
-   "density": "2.0"
-  },
-  {
-   "src": "\/assets/img/brand/favicon/android-icon-144x144.png",
-   "sizes": "144x144",
-   "type": "image\/png",
-   "density": "3.0"
-  },
-  {
-   "src": "\/assets/img/brand/favicon/android-icon-192x192.png",
-   "sizes": "192x192",
-   "type": "image\/png",
-   "density": "4.0"
-  }
- ]
+	"short_name": "IZITech",
+	"name": "IZITech",
+	"lang": "pt",
+	"description": "Desenvolvendo Soluções Digitais",
+	"start_url": "https://izitech.co/",
+	"background_color": "#8d032a",
+	"theme_color": "#8d032a",
+	"dir": "ltr",
+	"display": "standalone",
+	"orientation": "any",
+	"icons": [
+		{
+			"src": "/assets/img/icons/android-icon-192x192-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/assets/img/icons/apple-icon-180x180-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "180x180"
+		},
+		{
+			"src": "/assets/img/icons/apple-icon-152x152-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "152x152"
+		},
+		{
+			"src": "/assets/img/icons/apple-icon-144x144-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "/assets/img/icons/apple-icon-120x120-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "120x120"
+		},
+		{
+			"src": "/assets/img/icons/apple-icon-114x114-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "114x114"
+		},
+		{
+			"src": "/assets/img/icons/favicon-96x96-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "/assets/img/icons/apple-icon-76x76-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "76x76"
+		},
+		{
+			"src": "/assets/img/icons/apple-icon-72x72-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "72x72"
+		},
+		{
+			"src": "/assets/img/icons/apple-icon-60x60-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "60x60"
+		},
+		{
+			"src": "/assets/img/icons/apple-icon-57x57-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "57x57"
+		},
+		{
+			"src": "/assets/img/icons/favicon-32x32-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "/assets/img/icons/favicon-16x16-dunplab-manifest-10628.png",
+			"type": "image/png",
+			"sizes": "16x16"
+		}
+	],
+	"prefer_related_applications": "false"
 }

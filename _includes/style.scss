@@ -110,11 +110,11 @@ i, em {
 }
 
 .prefix {
-    color: $primary-color;
+    color: var(--link);
 }
 
 .waves-effect.waves-primary .waves-ripple {
-    background-color: rgba(141, 3, 42, 0.65);
+    background-color: rgba($color: var(--link), $alpha: 0.65);
 }
 
 #clientes {

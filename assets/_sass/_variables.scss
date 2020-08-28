@@ -21,14 +21,14 @@ $card-link-color-light: $primary-color-light !default;
 
 $navbar-height: 80px !default;
 $navbar-height-mobile: 80px !default;
-$navbar-font-color: var(--text) !default;
+$navbar-font-color: var(--link) !default;
 $navbar-brand-font-size: 2.1rem !default;
 
 
 /* 14. Side Navigation
    ========================================================================== */
 
-$sidenav-font-color: var(--text) !default;
+$sidenav-font-color: var(--link) !default;
 $sidenav-bg-color: var(--bg) !default;
 $sidenav-padding-right: 30px !default;
 $sidenav-item-height: 64px !default;
@@ -41,8 +41,4 @@ $progress-bar-color: $secondary-color !default;
 /* 21. Footer
    ========================================================================== */
 
-//$footer-bg-color: $primary-color !default;
-
-// Text Inputs + Textarea
-$input-height: 3rem !default;
-$input-border-color: $primary-color !default;
+$footer-bg-color: var(--bg) !default;
