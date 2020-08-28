@@ -8,10 +8,10 @@ if (systemInitiatedDark.matches) {
 
 function prefersColorTest(systemInitiatedDark) {
   if (systemInitiatedDark.matches) {
-  	document.documentElement.setAttribute('data-theme', 'dark');
+  	document.documentElement.setAttribute('data-theme', 'light');
    	sessionStorage.setItem('theme', '');
   } else {
-  	document.documentElement.setAttribute('data-theme', 'light');
+  	document.documentElement.setAttribute('data-theme', 'dark');
     
     sessionStorage.setItem('theme', '');
   }
