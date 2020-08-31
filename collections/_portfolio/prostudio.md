@@ -1,7 +1,6 @@
 ---
 title: ProStudio
-image: >-
-  https://res.cloudinary.com/izitech/image/upload/c_scale,q_auto,w_1080/v1556054972/websites/ProStudio.webp
+image: /assets/uploads/prostudio-web-screen-psd-mockup.jpg
 category: web
 link: https://prostudiomoz.com/
 ---
