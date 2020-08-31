@@ -1,7 +1,6 @@
 ---
 title: Fundação Apoio Amigo
-image: /assets/uploads/faawebmockup.jpg
+image: /assets/uploads/faa-website-mockup.jpg
 category: web
-link: 'https://faa.org.mz'
+link: https://faa.org.mz
 ---
-
