@@ -1,7 +1,6 @@
 ---
-title: 'Alumer, Lda'
-image: /assets/uploads/alumerwebmockup.jpg
+title: Alumer, Lda
+image: /assets/uploads/alumer-pespective-website-mockup.jpg
 category: web
-link: 'https://www.alumer.co.mz'
+link: https://www.alumer.co.mz
 ---
-
