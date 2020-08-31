@@ -32,7 +32,7 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Categoria", name: "category", widget: "select", options: "[grafico, web, consultoria]"}
+      - {label: "Categoria", name: "category", widget: "select", options: ["grafico", "web", "consultoria"]}
       - {label: "Link", name: "link", widget: "string", required: false}
 
   - label: "Clientes"
