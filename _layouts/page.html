@@ -6,7 +6,7 @@ layout: default
     <div class="container">
         <div class="section section-grid">
             {% for item in paginator.posts %}
-                <div class="card center" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="card {% if item.link %}small{% endif %} center" data-aos="zoom-in" data-aos-duration="3000">
                     <div class="card-image">
                         <a href="{{ item.image }}" data-lightbox="{{ item.category }}" data-title="{{ item.title }}">
                             <img
@@ -30,6 +30,10 @@ layout: default
                     {% endif %}
                 </div>
             {% endfor %}
+        </div>
+
+        <div class="center">
+            {% include pagination.html %}
         </div>
     </div>
 </section>
