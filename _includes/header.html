@@ -19,7 +19,9 @@
 
                 <div class="text-title">
                     <a href="#contactos" class="btn-large waves-effect waves-light modal-trigger">Contacte-nos</a>
-                    <a href="#servicos" class="btn-large transparent secondary-color-text waves-effect waves-primary">Conheça-nos</a>
+                    {% if page.layout == "default" %}
+                        <a href="#servicos" class="btn-large transparent secondary-color-text waves-effect waves-light">Conheça-nos</a>
+                    {% endif %}
                 </div>
             </section>
 
