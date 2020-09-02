@@ -24,7 +24,7 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Conteúdo", name: "body", widget: "markdown"}
 
-  - label: "Portfóli"
+  - label: "Portfólio"
     name: "portfolio"
     folder: "collections/_portfolio"
     create: true

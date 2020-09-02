@@ -6,29 +6,56 @@ layout: default
     <div class="container">
         <div class="section section-grid">
             {% for item in paginator.posts %}
-                <div class="card {% if item.link %}small{% endif %} center" data-aos="zoom-in" data-aos-duration="3000">
-                    <div class="card-image">
-                        <a href="{{ item.image }}" data-lightbox="{{ item.category }}" data-title="{{ item.title }}">
-                            <img
-                                data-src="{{ item.image }}?nf_resize=fit&w=320"
-                                alt="{{ item.title }}"
-                                data-srcset="{{ item.image }}?nf_resize=fit&h=480 2x,
-                                {{ item.image }}?nf_resize=fit&h=720 3x,
-                                {{ item.image }}?nf_resize=fit&h=1080 4x"
-                                class="lazy">
-                        </a>
-                    </div>
-
-                    <div class="card-content">
-                        <span class="card-title"><strong>{{ item.title }}</strong></span>
-                    </div>
-
-                    {% if item.link %}
-                        <div class="card-action center">
-                            <a href="{{ item.link }}" title="{{ item.title }}">Visite o Site</a>
+                {% unless page.title == "Blog" %}
+                    <div class="card {% if item.link %}small{% endif %} center" data-aos="zoom-in" data-aos-duration="3000">
+                        <div class="card-image">
+                            <a href="{{ item.image }}" data-lightbox="{{ item.category }}" data-title="{{ item.title }}">
+                                <img
+                                    data-src="{{ item.image }}?nf_resize=fit&w=320"
+                                    alt="{{ item.title }}"
+                                    data-srcset="{{ item.image }}?nf_resize=fit&h=480 2x,
+                                    {{ item.image }}?nf_resize=fit&h=720 3x,
+                                    {{ item.image }}?nf_resize=fit&h=1080 4x"
+                                    class="lazy">
+                            </a>
                         </div>
-                    {% endif %}
-                </div>
+
+                        <div class="card-content">
+                            <span class="card-title"><strong>{{ item.title }}</strong></span>
+                        </div>
+
+                        {% if item.link %}
+                            <div class="card-action center">
+                                <a href="{{ item.link }}" title="{{ item.title }}">Visite o Site</a>
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    {% else %}
+                        <div class="card large" data-aos="zoom-in" data-aos-duration="3000">
+                            <div class="card-image">
+                                <img
+                                    data-src="{{ item.image }}?nf_resize=fit&w=320"
+                                    alt="{{ item.title }}"
+                                    data-srcset="{{ item.image }}?nf_resize=fit&h=480 2x,
+                                    {{ item.image }}?nf_resize=fit&h=720 3x,
+                                    {{ item.image }}?nf_resize=fit&h=1080 4x"
+                                    class="lazy">
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-title"><strong>{{ item.title }}</strong></span>
+
+                                <div class="light">
+                                    {{ item.content | truncatewords: 10 }}
+                                </div>
+                            </div>
+
+                            <div class="card-action center">
+                                <a href="{{ item.link }}" title="{{ item.title }}">Leia Mais</a>
+                            </div>
+                        </div>
+                {% endunless %}
             {% endfor %}
         </div>
 
