@@ -1,12 +1,12 @@
-<section id="servicos" class="section scrollspy secondary-bg-color center">
+<section id="servicos" class="section scrollspy secondary-bg-color">
     <div class="container">
         <h4 class="text-title">Nossos Serviços</h4>
         <p>Somos especializados em várias áreas das Tecnologias de Informação e Comunicação, <br> vulgo TIC, todavia concentrámos mais esforço nos serviços abaixo:</p>
 
-        <div class="glider-contain">
-            <div class="glider">
-                {% for item in site.servicos %}
-                    <div class="card medium" data-aos="zoom-in" data-aos-duration="3000" style="margin: 20px;">
+        <div class="text-title slick-servicos">
+            {% for item in site.servicos %}
+                <div style="padding: 20px;" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="card medium">
                         <div class="card-title">
                             <h5 class="center text-title">
                                 <i class="fas fa-{{ item.icon }}"></i>
@@ -23,18 +23,8 @@
                             <a href="#servicos{{ forloop.index }}" class="btn-flat the-link waves-effect waves-primary modal-trigger">Saiba Mais</a>
                         </div>
                     </div>
-                {% endfor %}
-            </div>
-
-            <button aria-label="Previous" class="glider-prev">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-
-            <button aria-label="Next" class="glider-next">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-            
-            <div role="tablist" class="dots"></div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </section>
