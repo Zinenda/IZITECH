@@ -9,7 +9,7 @@ client:
     image: /assets/uploads/mussiro.svg
   - company: Hidro Fontes, Lda
     image: /assets/uploads/hidrofontes.svg
-  - company: Alumer, Lda
+  - company: Alumer
     image: /assets/uploads/alumer.svg
   - company: Rovuma Holdings, Lda
     image: /assets/uploads/rovuma.svg
